@@ -76,7 +76,7 @@ gulp.task('css:build', function() {
     //.pipe(sourcemaps.init())
     .pipe(less())
     .pipe(prefixer())
-    .pipe(cssmin())
+    // .pipe(cssmin())
     //.pipe(sourcemaps.write())
     .pipe(gulp.dest(path.build.css))
     .pipe(reload({stream:true}));
