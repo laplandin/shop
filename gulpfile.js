@@ -21,16 +21,19 @@ var path = {
     js: 'build/js/',
     css: 'build/css/',
     img: 'build/img/',
-    fonts: 'build/fonts/'
+    fonts: 'build/fonts/',
+    cssVendor:'build/css/vendor/',
+    plugins: 'build/plugins/'
   },
   src: {
     //Откуда брать исходники
     html: 'src/*.html',
-    js: 'src/js/main.js',
+    js: 'src/js/**/*.js',
     css: 'src/style/main.less',
     img: 'src/img/**/*.*',
     fonts: 'src/fonts/**/*.*',
-    cssVendor: 'src/style/vendor/*.css'
+    cssVendor: 'src/style/vendor/*.css',
+    plugins: "src/plugins/**/*.*"
   },
   watch: {
     //За изменениями каких файлов мы хотим наблюдать
@@ -38,7 +41,8 @@ var path = {
     js: 'src/js/**/*.js',
     css: 'src/style/**/*.less',
     img: 'src/img/**/*.*',
-    fonts: 'src/fonts/**/*.*'
+    fonts: 'src/fonts/**/*.*',
+    plugins: 'src/plugins/**/*.*'
   },
   clean: './build'
 };
@@ -82,9 +86,9 @@ gulp.task('css:build', function() {
     .pipe(reload({stream:true}));
 });
 
-gulp.task('css:vendor', function() {
+gulp.task('cssVendor', function() {
   gulp.src(path.src.cssVendor)
-    .pipe(gulp.dest(path.build.css));
+    .pipe(gulp.dest(path.build.cssVendor));
 });
 
 gulp.task('image:build', function () {
@@ -104,6 +108,12 @@ gulp.task('fonts:build', function() {
     .pipe(gulp.dest(path.build.fonts));
 });
 
+gulp.task('plugins:copy', function() {
+  gulp.src(path.src.plugins)
+    .pipe(gulp.dest(path.build.plugins))
+    .pipe(reload({stream: true}));
+});
+
 gulp.task('build', sequence([
       'clean'
     ],
@@ -111,9 +121,10 @@ gulp.task('build', sequence([
       'html:build',
       'js:build',
       'css:build',
-      'css:vendor',
+      'cssVendor',
       'fonts:build',
-      'image:build'
+      'image:build',
+      'plugins:copy'
 ]) );
 
 gulp.task('watch', function() {
@@ -131,6 +142,9 @@ gulp.task('watch', function() {
   });
   watch([path.watch.fonts], function(event, cb) {
     gulp.start('fonts:build');
+  });
+  watch([path.watch.plugins], function(event, cb) {
+    gulp.start('plugins:copy');
   });
 });
 
