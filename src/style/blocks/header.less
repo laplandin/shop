@@ -1,0 +1,64 @@
+.page-header {
+  margin: 0;
+  background-color: @greenlight;
+  border-radius: 0;
+
+  form.navbar-form {
+    margin-top: 54px;
+    margin-bottom: 0;
+  }
+
+  .navbar-form .form-group {
+    position: relative;
+    width: 100%;
+
+    .form-control {
+
+      width: inherit;
+      padding-right: 40px;
+    }
+  }
+
+  .navbar-form button {
+    position: absolute;
+    right: 31px;
+    bottom: 1px;
+    background-image: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: none;
+    border-left: 1px solid @greenlight;
+
+    &:hover {
+      background-color: @orange;
+      border-color: @orange;
+    }
+  }
+
+  .navbar-brand {
+    padding: 0 15px;
+  }
+
+  .btn.show.btn-no-border {
+    border: none;
+    margin: 8px 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: @greendark;
+    font-weight: 700;
+  }
+
+  .btn.show {
+    margin: 8px 0;
+    color: @greendark;
+    font-weight: 700;
+    border: 2px solid @greendark;
+  }
+
+  .btn-border {
+    &:hover {
+      background-color: @greendark;
+      color: @greenlight;
+    }
+  }
+}
