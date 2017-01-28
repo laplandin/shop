@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="plugins/flexslider/flexslider.css">
     <link rel="stylesheet" href="plugins/accordion/woco-accordion.css">
@@ -25,7 +26,8 @@
   </head>
   <body>
     <!--Nav begin -->
-    <div class="container">
+    <div class="color-wrapper bg-lgreen">
+      <div class="container">
         <div class="row">
           <header class="navbar page-header">
                <!-- <row> -->
@@ -35,147 +37,176 @@
             <div class="col-md-5">
               <form class="navbar-form" role="search">
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Поиск семян...">
+                  <input type="text" class="form-control input" placeholder="Поиск семян...">
                 </div>
-                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                <button type="submit" class="btn btn-default"><span class="fa fa-search" aria-hidden="true"></span></button>
               </form>
             </div>
             <div class="col-md-2">
-                  <a class="btn btn-no-border show" href="tel:+78005004244">8 800 500 42 44</a>
-                  <a class="btn show btn-border" href="#">Заказать звонок</a>
+                  <a class="btn btn-phone" href="tel:+78005004244">8 800 500 42 44</a>
+                  <a class="btn show btn-main" href="#">Заказать звонок</a>
             </div>
             <div class="col-md-2">
-                  <a class="btn show btn-border" href="#">Войти</a>
-                  <a class="btn show btn-border" href="#">Корзина</a>
+                  <a class="btn show btn-main" href="#">Войти</a>
+                  <a class="btn show btn-main" href="#">Корзина</a>
             </div>
           </header>
         </div>
-
+      </div>
     </div>
     <!-- End nav -->
     <!-- Navbar begin -->
-    <div class="container">
-      <div class="row">
-      <nav class="navbar-default page-navigation">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapseNav" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-         </button>
-        </div>
-        <div class="collapse navbar-collapse" id="collapseNav">
-          <div class=" btn-group btn-group-justified" role="group">
-            <div class="active btn-group" role="group"><a class="btn" role="button" href="#">Главная<span class="sr-only">(current)</span></a></div>
-            <div class="btn-group" role="group"><a class="btn" role="button" href="#">Акции</a></div>
-            <div class="btn-group" role="group"><a class="btn" role="button" href="#">Каталоги</a></div>
-            <div class="btn-group" role="group"><a class="btn" role="button" href="#">Доставка и оплата</a></div>
-            <div class="btn-group" role="group"><a class="btn" role="button" href="#">Скидки</a></div>
-            <div class="btn-group" role="group"><a class="btn" role="button" href="#">Сертификаты</a></div>
-            <div class="btn-group" role="group"><a class="btn" role="button" href="#">О нас</a></div>
-            <div class="btn-group" role="group"><a class="btn" role="button" href="#">Контакты</a></div>
+    <div class="color-wrapper bg-orange">
+      <div class="container">
+        <div class="row">
+        <nav class="page-navigation">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapseNav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+           </button>
           </div>
+          <div class="collapse navbar-collapse" id="collapseNav">
+            <div class=" btn-group btn-group-justified" role="group">
+              <div class="active btn-group" role="group"><a class="btn" role="button" href="#">Главная<span class="sr-only">(current)</span></a></div>
+              <div class="btn-group" role="group"><a class="btn" role="button" href="#">Акции</a></div>
+              <div class="btn-group" role="group"><a class="btn" role="button" href="#">Каталоги</a></div>
+              <div class="btn-group" role="group"><a class="btn" role="button" href="#">Доставка и оплата</a></div>
+              <div class="btn-group" role="group"><a class="btn" role="button" href="#">Скидки</a></div>
+              <div class="btn-group" role="group"><a class="btn" role="button" href="#">Сертификаты</a></div>
+              <div class="btn-group" role="group"><a class="btn" role="button" href="#">О нас</a></div>
+              <div class="btn-group" role="group"><a class="btn" role="button" href="#">Контакты</a></div>
+            </div>
+          </div>
+        </nav>
         </div>
-      </nav>
       </div>
     </div>
     <!-- Navbar-end -->
     <!-- Content block row  start -->
-    <main class="container">
-      <row class="content">
-        <!-- Aside menu-column - Begin -->
-        <aside class="col-md-3">
-          <section class="row aside-block aside-block-seeds">
-            <div class="col-md-12">
-              <ul class="nav nav-pills nav-stacked aside-block-list">
-                <li role="presentation" class="active"><a href="#">Семена</a></li>
-                <li role="presentation">
-                  <a href="#">Категория 1</a>
-                  <ul class="aside-block-sublist">
-                    <li role="presentation"><a href="">Подкатегория 1</a></li>
-                    <li role="presentation"><a href="">Подкатегория 2</a></li>
-                  </ul>
-                </li>
-                <li role="presentation"><a href="#">Категория 2</a></li>
-                <li role="presentation"><a href="#">Категория 3</a></li>
-                <li role="presentation"><a href="#">Категория 4</a></li>
-                <li role="presentation"><a href="#">Категория 5</a></li>
-                <li role="presentation"><a href="#">Категория 6</a></li>
-              </ul>
-            </div>
-          </section>
-          <section class="row aside-block aside-block-chemicals">
-            <div class="col-md-12">
-              <ul class="nav nav-pills nav-stacked aside-block-list">
-                <li role="presentation" class="active"><a href="#">Агрохимикаты</a></li>
-                <li role="presentation">
-                  <a href="#">Категория 1</a>
-                  <ul class="aside-block-sublist">
-                    <li role="presentation"><a href="">Подкатегория 1</a></li>
-                    <li role="presentation"><a href="">Подкатегория 2</a></li>
-                  </ul>
-                </li>
-                <li role="presentation"><a href="#">Категория 2</a></li>
-                <li role="presentation"><a href="#">Категория 3</a></li>
-                <li role="presentation"><a href="#">Категория 4</a></li>
-                <li role="presentation"><a href="#">Категория 5</a></li>
-                <li role="presentation"><a href="#">Категория 6</a></li>
-              </ul>
-            </div>
-          </section>
-          <section class="row aside-block aside-block-news">
-            <div class="col-md-12">
-              <ul class="nav nav-pills nav-stacked aside-block-list">
-                <li role="presentation" class="active"><h3>Новости</h3></li>
-              </ul>
-              <div class="news-item">
-                <p class="news-date">18 января 2017 г.</p>
-                <p class="news-promo">Скидки на сезонные семена до 30%</p>
+    <div class="color-wrapper">
+      <main class="container section-small bg-lgreen">
+        <div class="row content">
+          <!-- Aside menu-column - Begin -->
+          <aside class="col-md-3 col-pad-top bg-lgreen">
+            <section class="row aside-block aside-block-seeds">
+              <div class="col-md-12">
+                <ul class="nav nav-pills nav-stacked aside-block-list">
+                  <li role="presentation" class="active"><a href="#"><h4>Семена</h4></a></li>
+                  <li role="presentation">
+                    <a href="#">Категория 1</a>
+                    <ul class="aside-block-sublist">
+                      <li role="presentation"><a href="">Подкатегория 1</a></li>
+                      <li role="presentation"><a href="">Подкатегория 2</a></li>
+                    </ul>
+                  </li>
+                  <li role="presentation"><a href="#">Категория 2</a></li>
+                  <li role="presentation"><a href="#">Категория 3</a></li>
+                  <li role="presentation"><a href="#">Категория 4</a></li>
+                  <li role="presentation"><a href="#">Категория 5</a></li>
+                  <li role="presentation"><a href="#">Категория 6</a></li>
+                </ul>
               </div>
-              <div class="news-item">
-                <p class="news-date">17 января 2017 г.</p>
-                <p class="news-promo">Наш ассортимент значительно расширился</p>
+            </section>
+            <section class="row aside-block aside-block-chemicals">
+              <div class="col-md-12">
+                <ul class="nav nav-pills nav-stacked aside-block-list">
+                  <li role="presentation" class="active"><a href="#"><h4>Агрохимикаты</h3></a></li>
+                  <li role="presentation">
+                    <a href="#">Категория 1</a>
+                    <ul class="aside-block-sublist">
+                      <li role="presentation"><a href="">Подкатегория 1</a></li>
+                      <li role="presentation"><a href="">Подкатегория 2</a></li>
+                    </ul>
+                  </li>
+                  <li role="presentation"><a href="#">Категория 2</a></li>
+                  <li role="presentation"><a href="#">Категория 3</a></li>
+                  <li role="presentation"><a href="#">Категория 4</a></li>
+                  <li role="presentation"><a href="#">Категория 5</a></li>
+                  <li role="presentation"><a href="#">Категория 6</a></li>
+                </ul>
               </div>
-              <div class="news-item">
-                <p class="news-date">16 января 2017г.</p>
-                <p class="news-promo">Стартовала акция &laquo;Удобрение в&nbsp;подарок&raquo;</p>
-              </div>
-              <a href="" class="btn btn-info">Читать больше новостей</a>
-            </div>
-          </section>
-        </aside>
-        <!-- Aside menu-column End -->
-        <!-- Wrapper for main column Begin -->
-        <div class="col-md-9">
-          <!-- Slider Begin -->
-          <div class="col-md-12">
-            <div class="flexslider">
-              <ul class="slides">
-                <li>
-                  <img src="img/x300.jpg" />
-                </li>
-                <li>
-                  <img src="img/x300.jpg" />
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- Slider End -->
-          <h2 class="section-title text-center">Популярные товары</h2>
-          <div class="row items-list">
-            <div class="col-md-4">
-              <div class="thumbnail">
-               <img src="..." alt="...">
-               <div class="caption">
-                 <h3>Имя товара</h3>
-                 <p>пкпкпкпкпкпккппкп <br>fefeefefefe <br></p>
-                 <p>
-                   <a href="#" class="btn btn-primary" role="button">Купить</a>
-                   <a href="#" class="btn btn-default" role="button">Подробнее</a></p>
-               </div>
+            </section>
+            <section class="row aside-block">
+              <div class="col-md-12">
+                <div class="aside-block-news">
+                  <h4>Новости</h4>
+                  <div class="news-item">
+                    <p class="news-date">18 января 2017 г.</p>
+                    <p class="news-promo">Скидки на сезонные семена до 30%</p>
+                  </div>
+                  <div class="news-item">
+                    <p class="news-date">17 января 2017 г.</p>
+                    <p class="news-promo">Наш ассортимент значительно расширился</p>
+                  </div>
+                  <div class="news-item">
+                    <p class="news-date">16 января 2017г.</p>
+                    <p class="news-promo">Стартовала акция &laquo;Удобрение в&nbsp;подарок&raquo;</p>
+                  </div>
+                  <a href="" class="btn btn-main center-block">Читать больше новостей</a>
+                </div>
+                </div>
+            </section>
+          </aside>
+          <!-- Aside menu-column End -->
+          <!-- Wrapper for main column Begin -->
+          <div class="col-md-9 bg-yellow">
+            <!-- Slider Begin -->
+            <div class="row">
+              <div class="flexslider">
+                <ul class="slides">
+                  <li>
+                    <img src="img/x300.jpg" />
+                  </li>
+                  <li>
+                    <img src="img/x300.jpg" />
+                  </li>
+                </ul>
               </div>
             </div>
+            <!-- Slider End -->
+            <h2 class="section-title text-center">Популярные товары</h2>
+            <div class="row items-list">
+              <div class="col-md-4">
+                <div class="thumbnail">
+                 <img src="..." alt="...">
+                 <div class="caption">
+                   <h3>Имя товара</h3>
+                   <p>пкпкпкпкпкпккппкп <br>fefeefefefe <br></p>
+                   <p>
+                     <a href="#" class="btn btn-primary" role="button">Купить</a>
+                     <a href="#" class="btn btn-default" role="button">Подробнее</a></p>
+                 </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="thumbnail">
+                 <img src="..." alt="...">
+                 <div class="caption">
+                   <h3>Имя товара</h3>
+                   <p>...</p>
+                   <p>
+                     <a href="#" class="btn btn-primary" role="button">Купить</a>
+                     <a href="#" class="btn btn-default" role="button">Подробнее</a></p>
+                 </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="thumbnail">
+                 <img src="..." alt="...">
+                 <div class="caption">
+                   <h3>Имя товара</h3>
+                   <p>...</p>
+                   <p>
+                     <a href="#" class="btn btn-primary" role="button">Купить</a>
+                     <a href="#" class="btn btn-default" role="button">Подробнее</a></p>
+                 </div>
+                </div>
+              </div>
+            <!-- </div>
+            <div class="row items-list"> -->
             <div class="col-md-4">
               <div class="thumbnail">
                <img src="..." alt="...">
@@ -200,50 +231,24 @@
                </div>
               </div>
             </div>
-          <!-- </div>
-          <div class="row items-list"> -->
-          <div class="col-md-4">
-            <div class="thumbnail">
-             <img src="..." alt="...">
-             <div class="caption">
-               <h3>Имя товара</h3>
-               <p>...</p>
-               <p>
-                 <a href="#" class="btn btn-primary" role="button">Купить</a>
-                 <a href="#" class="btn btn-default" role="button">Подробнее</a></p>
-             </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+               <img src="..." alt="...">
+               <div class="caption">
+                 <h3>Имя товара</h3>
+                 <p>...</p>
+                 <p>
+                   <a href="#" class="btn btn-primary" role="button">Купить</a>
+                   <a href="#" class="btn btn-default" role="button">Подробнее</a></p>
+               </div>
+              </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="thumbnail">
-             <img src="..." alt="...">
-             <div class="caption">
-               <h3>Имя товара</h3>
-               <p>...</p>
-               <p>
-                 <a href="#" class="btn btn-primary" role="button">Купить</a>
-                 <a href="#" class="btn btn-default" role="button">Подробнее</a></p>
-             </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="thumbnail">
-             <img src="..." alt="...">
-             <div class="caption">
-               <h3>Имя товара</h3>
-               <p>...</p>
-               <p>
-                 <a href="#" class="btn btn-primary" role="button">Купить</a>
-                 <a href="#" class="btn btn-default" role="button">Подробнее</a></p>
-             </div>
-            </div>
-          </div>
+          <!-- Wrapper for main column - end -->
         </div>
-        <!-- Wrapper for main column - end -->
-      </row>
-    </main>
+      </main>
+    </div>
     <!-- Content block row End -->
-
     <div class="container">
       <!-- Promo Begin -->
       <div class="row promo">

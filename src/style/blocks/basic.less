@@ -13,3 +13,38 @@
 .bg-orange {
   background-color: @orange;
 }
+
+.col-pad-top {
+  padding-top: 50px;
+}
+
+.btn-main {
+  margin: 8px 0;
+  color: @greendark;
+  font-weight: 700;
+  border: 2px solid @greendark;
+
+  &:hover {
+    background-color: @greendark;
+    color: @greenlight;
+  }
+}
+
+.input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid @greendark;
+  color: white;
+  box-shadow: none;
+  border-radius: 0;
+
+  &:focus {
+    border-radius: 4px;
+    border: 2px solid @greendark;
+  }
+
+  &::-webkit-input-placeholder {color: @greendark;}
+  &::-moz-placeholder          {color: @greendark;}/* Firefox 19+ */
+  &:-moz-placeholder           {color: @greendark;}/* Firefox 18- */
+  &:-ms-input-placeholder      {color: @greendark;}
+}
