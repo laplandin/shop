@@ -3,6 +3,8 @@ $(document).ready(function() {
   $('.flexslider').flexslider({
     animation: "slide"
   });
+
+  $('.your-class').slick();
 // slider end
 // accordion goes here
     jQuery(function() {
