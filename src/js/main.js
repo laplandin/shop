@@ -1,10 +1,16 @@
 $(document).ready(function() {
 // slider initialization
-  $('.flexslider').flexslider({
+  $('#slider-main').flexslider({
     animation: "slide"
   });
-
-  $('.your-class').slick();
+  $('#slider-cert').flexslider({
+    animation: "slide",
+    animationLoop: false,
+    itemWidth: 300,
+    itemMargin: 5,
+    minItems: 2,
+    maxItems: 3
+  });
 // slider end
 // accordion goes here
     jQuery(function() {

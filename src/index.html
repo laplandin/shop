@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Основной элемент</title>
-
     <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -86,7 +85,7 @@
     <!-- Navbar-end -->
     <!-- Content block row  start -->
     <div class="color-wrapper">
-      <main class="container section-small bg-lgreen">
+      <main class="container section bg-lgreen">
         <div class="row content">
           <!-- Aside menu-column - Begin -->
           <aside class="col-md-3 bg-lgreen">
@@ -154,7 +153,7 @@
           <div class="col-md-9 bg-white">
             <!-- Slider Begin -->
             <div class="row">
-              <div class="flexslider">
+              <div class="flexslider" id="slider-main">
                 <ul class="slides">
                   <li>
                     <img src="img/x300.jpg"/>
@@ -257,68 +256,99 @@
     <!-- Content block row End -->
     <div class="container">
       <!-- Promo Begin -->
-      <div class="row promo">
+      <div class="row promo  section">
         <div class="col-md-3 promo-background-img">
-          <h2 class="promo-title">Акция</h2>
-          <p class="promo-description">Скидка на семена саката и энза <strong>10%</strong></p>
+          <img class="img-responsive" src="img/promo.jpg" alt="">
+          <!-- <h2 class="promo-title">Акция</h2>
+          <p class="promo-description">Скидка на семена саката и энза <strong>10%</strong></p> -->
         </div>
         <div class="col-md-9 promo-banner">
-          <p class="text-uppercase">Акция - скидка на семена саката и энза 10%</p>
+          <p class="promo-text text-uppercase">Акция - скидка на семена саката и энза 10%</p>
         </div>
       </div>
+    </div>
       <!-- Promo End -->
       <!-- Features block Begin -->
-      <div class="row features">
+    <div class="container">
+      <div class="row features section">
         <div class="col-md-3 features-item">
-          <img class="img-circle" src="img/x300.jpg" alt="">
-          <p class="features-description text-center">Профессиональные семена</p>
+          <img class="img-circle" src="img/x301.jpg" alt="">
+          <p class="features-title text-center">Профессиональные семена</p>
         </div>
         <div class="col-md-3 features-item">
-          <img class="img-circle" src="img/x300.jpg" alt="">
-          <p class="features-description text-center">Большой выбор семян</p>
+          <img class="img-circle" src="img/x301.jpg" alt="">
+          <p class="features-title text-center">Большой выбор семян</p>
         </div>
         <div class="col-md-3 features-item">
-          <img class="img-circle" src="img/x300.jpg" alt="">
-          <p class="features-description text-center">Для профессиональных производителей</p>
+          <img class="img-circle" src="img/x301.jpg" alt="">
+          <p class="features-title text-center">Для профессиональных производителей</p>
         </div>
         <div class="col-md-3 features-item">
-          <img class="img-circle" src="img/x300.jpg" alt="">
-          <p class="features-description text-center">В любом объеме</p>
+          <img class="img-circle" src="img/x301.jpg" alt="">
+          <p class="features-title text-center">В любом объеме</p>
         </div>
       </div>
+    </div>
       <!-- Features block End -->
-      <section class="section section-about">
-        <div class="row">
-          <h2 class="section-title text-uppercase">О нас</h2>
-          <div class="col-md-6">
-            <h3 class="text-title text-uppercase">Семена лучшего качества</h3>
-            <p class="text">
-              Уже более 3&nbsp;лет с&nbsp;помощью своего опыта и&nbsp;знаний
-              мы&nbsp;отбираем самые качественные и&nbsp;востребованные семена
-              от&nbsp;лучших мировых производителей (Саката, Энза Заден, Семенис,
-              Рийк Цваан, Китано, Сингента, Нунемс и&nbsp;др.). Затем бережно
-              их&nbsp;расфасовываем, и&nbsp;с&nbsp;помощью наших инфраструктурных
-              партнёров быстро и&nbsp;удобно доставляем Вам, так называемые
-              &laquo;профессиональные семена&raquo;, которые гарантированно
-              обеспечат Вас богатым и&nbsp;вкусным урожаем.
-            </p>
+    <div class="color-wrapper bg-yellow">
+      <div class="container">
+        <section class="section section-about">
+          <div class="row">
+            <h2 class="section-title text-uppercase text-center">О нас</h2>
+            <div class="col-md-6 section">
+              <h3 class="text-title text-uppercase">Семена лучшего качества</h3>
+              <p class="text lead">
+                Уже более 3&nbsp;лет с&nbsp;помощью своего опыта и&nbsp;знаний
+                мы&nbsp;отбираем самые качественные и&nbsp;востребованные семена
+                от&nbsp;лучших мировых производителей (Саката, Энза Заден, Семенис,
+                Рийк Цваан, Китано, Сингента, Нунемс и&nbsp;др.). Затем бережно
+                их&nbsp;расфасовываем, и&nbsp;с&nbsp;помощью наших инфраструктурных
+                партнёров быстро и&nbsp;удобно доставляем Вам, так называемые
+                &laquo;профессиональные семена&raquo;, которые гарантированно
+                обеспечат Вас богатым и&nbsp;вкусным урожаем.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <img class="img-responsive" src="img/about.jpg" alt="">
+            </div>
           </div>
-          <div class="col-md-6">
-            <img class="img-responsive" src="" alt="">
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
+    </div>
+
+    <div class="container">
       <section class="section section-sertificates">
         <div class="row">
-          <h2 class="section-title text-uppercase">Наши сертификаты</h2>
-          <div class="col-md-4"><img src="" alt="" class="img-responsive"></div>
-          <div class="col-md-4"><img src="" alt="" class="img-responsive"></div>
-          <div class="col-md-4"><img src="" alt="" class="img-responsive"></div>
+          <h2 class="section-title text-uppercase text-center">Наши сертификаты</h2>
+          <div class="flexslider" id="slider-cert">
+            <ul class="slides">
+              <li>
+                <img src="img/cert1.jpg" />
+              </li>
+              <li>
+                <img src="img/cert2.jpg" />
+              </li>
+              <li>
+                <img src="img/cert3.jpg" />
+              </li>
+              <li>
+                <img src="img/cert4.jpg" />
+              </li>
+              <li>
+                <img src="img/cert5.jpg" />
+              </li>
+              <li>
+                <img src="img/cert6.jpg" />
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
+    </div>
+    <div class="container">
       <section class="section section-faq">
         <div class="row">
-          <h2 class="section-title text-uppercase">Нас часто спрашивают</h2>
+          <h2 class="section-title text-uppercase text-center">Нас часто спрашивают</h2>
           <div class="col-md-10 col-md-offset-1">
             <!-- articles accordion goes here -->
             <div id="ss_menu">
@@ -391,6 +421,8 @@
             </div>
           </div>
       </section>
+    </div>
+    <div class="container">
       <section class="section payment">
         <div class="row">
           <h2 class="section-title text-uppercase">Доставка и оплата</h2>
@@ -409,6 +441,8 @@
           </div>
         </div>
       </section>
+    </div>
+    <div class="container">
       <section class="section contacts">
         <div class="row">
           <h2 class="section title text-uppercase">Контакты</h2>
