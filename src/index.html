@@ -69,13 +69,13 @@
           <div class="collapse navbar-collapse" id="collapseNav">
             <div class=" btn-group btn-group-justified" role="group">
               <div class="active btn-group" role="group"><a class="btn" role="button" href="#">Главная<span class="sr-only">(current)</span></a></div>
-              <div class="btn-group" role="group"><a class="btn" role="button" href="#">Акции</a></div>
-              <div class="btn-group" role="group"><a class="btn" role="button" href="#">Каталоги</a></div>
-              <div class="btn-group" role="group"><a class="btn" role="button" href="#">Доставка и оплата</a></div>
-              <div class="btn-group" role="group"><a class="btn" role="button" href="#">Скидки</a></div>
-              <div class="btn-group" role="group"><a class="btn" role="button" href="#">Сертификаты</a></div>
-              <div class="btn-group" role="group"><a class="btn" role="button" href="#">О нас</a></div>
-              <div class="btn-group" role="group"><a class="btn" role="button" href="#">Контакты</a></div>
+              <div class="btn-group" role="group"><a class="btn" data-scroll="Linear" role="button" href="#promo">Акции</a></div>
+              <div class="btn-group" role="group"><a class="btn" data-scroll="Linear" role="button" href="#catalog">Каталоги</a></div>
+              <div class="btn-group" role="group"><a class="btn" data-scroll="Linear" role="button" href="#delivery">Доставка и оплата</a></div>
+              <div class="btn-group" role="group"><a class="btn" data-scroll="Linear" role="button" href="#promo">Скидки</a></div>
+              <div class="btn-group" role="group"><a class="btn" data-scroll="Linear" role="button" href="#cert">Сертификаты</a></div>
+              <div class="btn-group" role="group"><a class="btn" data-scroll="Linear" role="button" href="#about">О нас</a></div>
+              <div class="btn-group" role="group"><a class="btn" data-scroll="Linear" role="button" href="#contacts">Контакты</a></div>
             </div>
           </div>
         </nav>
@@ -164,19 +164,13 @@
                 </ul>
               </div>
             </div>
-            <!-- <div>
-              <div class="your-class">
-                <div><img src="img/x300.jpg" /></div>
-                <div><img src="img/x300.jpg" /></div>
-                <div><img src="img/x300.jpg" /></div>
-              </div>
-            </div>   -->
             <!-- Slider End -->
+            <a id="catalog"></a>
             <h2 class="section-title text-center">Популярные товары</h2>
             <div class="row items-list">
               <div class="col-md-4 stock-item">
                 <div class="thumbnail">
-                 <img src="..." alt="...">
+                 <img class="img-responsive" src="img/stock-item.jpg" alt="...">
                  <div class="caption">
                    <h3>Имя товара</h3>
                    <p>пкпкпкпкпкпккппкп <br>fefeefefefe <br></p>
@@ -188,7 +182,7 @@
               </div>
               <div class="col-md-4 stock-item">
                 <div class="thumbnail">
-                 <img src="..." alt="...">
+                 <img class="img-responsive" src="img/stock-item.jpg" alt="...">
                  <div class="caption">
                    <h3>Имя товара</h3>
                    <p>...</p>
@@ -200,7 +194,7 @@
               </div>
               <div class="col-md-4 stock-item">
                 <div class="thumbnail">
-                 <img src="..." alt="...">
+                 <img class="img-responsive" src="img/stock-item.jpg" alt="...">
                  <div class="caption">
                    <h3>Имя товара</h3>
                    <p>...</p>
@@ -210,11 +204,9 @@
                  </div>
                 </div>
               </div>
-            <!-- </div>
-            <div class="row items-list"> -->
             <div class="col-md-4 stock-item">
               <div class="thumbnail">
-               <img src="..." alt="...">
+               <img class="img-responsive" src="img/stock-item.jpg" alt="...">
                <div class="caption">
                  <h3>Имя товара</h3>
                  <p>...</p>
@@ -226,7 +218,7 @@
             </div>
             <div class="col-md-4 stock-item">
               <div class="thumbnail">
-               <img src="..." alt="...">
+               <img class="img-responsive" src="img/stock-item.jpg" alt="...">
                <div class="caption">
                  <h3>Имя товара</h3>
                  <p>...</p>
@@ -238,7 +230,7 @@
             </div>
             <div class="col-md-4 stock-item">
               <div class="thumbnail">
-               <img src="..." alt="...">
+               <img class="img-responsive" src="img/stock-item.jpg" alt="...">
                <div class="caption">
                  <h3>Имя товара</h3>
                  <p>...</p>
@@ -256,11 +248,10 @@
     <!-- Content block row End -->
     <div class="container">
       <!-- Promo Begin -->
+      <a id="promo"></a>
       <div class="row promo  section">
         <div class="col-md-3 promo-background-img">
           <img class="img-responsive" src="img/promo.jpg" alt="">
-          <!-- <h2 class="promo-title">Акция</h2>
-          <p class="promo-description">Скидка на семена саката и энза <strong>10%</strong></p> -->
         </div>
         <div class="col-md-9 promo-banner">
           <p class="promo-text text-uppercase">Акция - скидка на семена саката и энза 10%</p>
@@ -291,6 +282,7 @@
     </div>
       <!-- Features block End -->
     <div class="color-wrapper bg-yellow">
+      <a id="about"></a>
       <div class="container">
         <section class="section section-about">
           <div class="row">
@@ -315,8 +307,8 @@
         </section>
       </div>
     </div>
-
     <div class="container">
+      <a id="cert"></a>
       <section class="section section-sertificates">
         <div class="row">
           <h2 class="section-title text-uppercase text-center">Наши сертификаты</h2>
@@ -342,6 +334,9 @@
               </li>
             </ul>
           </div>
+        </div>
+        <div class="button-wrapper text-center">
+          <button class="btn btn-action">Больше сертификатов</button>
         </div>
       </section>
     </div>
@@ -425,63 +420,64 @@
       </div>
     </div>
     <div class="container">
+      <a id="delivery"></a>
       <section class="section payment">
         <div class="row">
-          <h2 class="section-title text-uppercase">Доставка и оплата</h2>
+          <h2 class="section-title text-uppercase text-center">Доставка и оплата</h2>
           <div class="col-md-6 map">
             <div id="map"></div>
           </div>
           <div class="col-md-6">
-            <h3 class="delivery-title text-uppercase">Доставка</h3>
-            <p class="delivery-text text">
+            <h3 class="subtitle delivery-title text-uppercase">Доставка</h3>
+            <p class="delivery-text text lead">
               Доставка осуществляется почтой России, транспортными компаниями,
               либо самовывозом в&nbsp;пункте выдачи. отправка заказа 1&nbsp;день.
               Время и&nbsp;стоимость доставки завит от&nbsp;выбранного способа.
               Для Расчёта стоимости доставки укажите параметры заказа. Либо
-              свяжитесь с&nbsp;нашим менеджером по&nbsp;тел. <a href="tel:+79286183139">+7 928 618 3139</a>
+              свяжитесь с&nbsp;нашим менеджером по&nbsp;тел.&nbsp;<a href="tel:+79286183139">+7&nbsp;928&nbsp;618&nbsp;3139</a>
             </p>
           </div>
         </div>
       </section>
     </div>
-    <div class="container">
-      <section class="section contacts">
-        <div class="row">
-          <h2 class="section title text-uppercase">Контакты</h2>
-          <div class="col-md-4">
-            <p class="contacts-address">
-              346448 Российская Федерация<br>
-              г. Новочерскасск,  ул. Ященко 8
-            </p>
-            <p class="contacts-tel"><a href="tel:+79286183139">+7 928 618 3139</a></p>
-            <p class="contacts-e-mail"><a href="mailto:hello@semena-rostov.ru">Hello@semena-rostov.ru</a></p>
-          </div>
-          <div class="col-md-4">
-            <img src="" alt="" class="img-responsive">
-          </div>
-          <div class="col-md-4">
-            <div class="form-wrapper">
-              <form action="post" class="write-to-us">
-                <input type="text" name="send" placeholder="Имя...">
-                <input type="text" name="send" value="" placeholder="Эл.почта...">
-                <textarea name="send" rows="3" cols="22" placeholder="Ваше сообщение..."></textarea>
-                <button type="submit" class="form-submit btn btn-primary" name="button">Отправить</button>
-              </form>
+    <div class="color-wrapper bg-dgreen">
+      <div class="container">
+        <a id="contacts"></a>
+        <section class="section contacts">
+          <div class="row">
+            <h2 class="section-title text-uppercase text-center">Контакты</h2>
+            <div class="col-md-4">
+              <p class="contacts-address">
+                346448 Российская Федерация<br>
+                г. Новочерскасск,  ул. Ященко 8
+              </p>
+              <p class="contacts-tel"><a href="tel:+79286183139">+7 928 618 3139</a></p>
+              <p class="contacts-e-mail"><a href="mailto:hello@semena-rostov.ru">Hello@semena-rostov.ru</a></p>
+            </div>
+            <div class="col-md-4">
+              <img src="" alt="" class="img-responsive">
+            </div>
+            <div class="col-md-4">
+              <div class="form-wrapper">
+                <form action="post" class="write-to-us">
+                  <input class="input--light" type="text" name="send" placeholder="Имя...">
+                  <input class="input--light" type="text" name="send" value="" placeholder="Эл.почта...">
+                  <textarea class="input--light" name="send" rows="3" cols="22" placeholder="Ваше сообщение..."></textarea>
+                  <button type="submit" class="form-submit btn btn-submit" name="button">Отправить</button>
+                </form>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
-
-
-
-
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Plugins -->
     <script src="plugins/flexslider/jquery.flexslider.js"></script>
+    <script src="plugins/smooth-scroll/smooth-scroll.js"></script>
     <script src="js/main.js"></script>
     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=XicU2mSOrSJw3yb-FAvWFqb9-BZMZljm&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&id=map"></script>
   </body>

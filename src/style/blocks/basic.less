@@ -1,9 +1,19 @@
+/**
+ * Background-colors
+ */
 .bg-lgreen {
   background-color: @greenlight;
 }
 
 .bg-dgreen {
   background-color: @greendark;
+
+  .section-title,
+  .subtitle,
+  a,
+  p {
+    color: white;
+  }
 }
 
 .bg-yellow {
@@ -17,17 +27,15 @@
 .bg-white {
   background-color: white;
 }
-
-.col-pad-top {
-  padding-top: 50px;
-}
-
+/**
+ * Buttons
+ */
 .btn-main {
   margin: 8px 0;
   color: @greendark;
   font-weight: 700;
   border: 2px solid @greendark;
-  // background-color: transparent;
+  background-color: transparent;
 
   &:hover {
     background-color: @greendark;
@@ -40,6 +48,7 @@
   color: @orange;
   font-weight: 700;
   border: 2px solid @orange;
+  background-color: transparent;
 
   &:hover {
     background-color: @orange;
@@ -52,10 +61,25 @@
   color: @text-dark;
   font-weight: 700;
   border: 2px solid @text-dark;
+  background-color: transparent;
 
   &:hover {
     background-color: @text-dark;
     color: white;
+  }
+}
+
+.btn-submit {
+  margin: 8px 0;
+  color: white;
+  font-weight: 700;
+  border: 2px solid white;
+  outline: none;
+  background-color: transparent;
+
+  &:hover {
+    background-color: white;
+    color: @text-dark;
   }
 }
 
@@ -79,6 +103,50 @@
   &:-ms-input-placeholder      {color: @greendark;}
 }
 
+.input--light {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 6px 10px;
+  outline: none;
+
+  &:active,
+  &:focus {
+    border-radius: 4px;
+    border: 2px solid white;
+  }
+
+  &::-webkit-input-placeholder {
+    color: @greenlight;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  &::-moz-placeholder          {
+    color: @greenlight;
+    text-transform: uppercase;
+    font-weight: 700;
+    }/* Firefox 19+ */
+  &:-moz-placeholder           {
+    color: @greenlight;
+    text-transform: uppercase;
+    font-weight: 700;
+    }/* Firefox 18- */
+  &:-ms-input-placeholder      {
+    color: @greenlight;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}
+/**
+ * Sections
+ */
+ main.section {
+   padding-bottom: 0;
+ }
+
 .section {
  position: relative;
  padding-top: 50px;
@@ -93,4 +161,9 @@
   margin: 20px 0;
   font-weight: 700;
   font-size: 42px;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-weight: bold;
 }
