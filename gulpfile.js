@@ -88,7 +88,7 @@ gulp.task('css:build', function() {
 
 gulp.task('cssVendor', function() {
   gulp.src(path.src.cssVendor)
-    .pipe(gulp.dest(path.build.cssVendor));
+    .pipe(gulp.dest(path.build.css));
 });
 
 gulp.task('image:build', function () {
