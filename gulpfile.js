@@ -23,7 +23,8 @@ var path = {
     img: 'build/img/',
     fonts: 'build/fonts/',
     cssVendor:'build/css/vendor/',
-    plugins: 'build/plugins/'
+    plugins: 'build/plugins/',
+    files: 'build/'
   },
   src: {
     //Откуда брать исходники
@@ -33,7 +34,8 @@ var path = {
     img: 'src/img/**/*.*',
     fonts: 'src/fonts/**/*.*',
     cssVendor: 'src/style/vendor/*.css',
-    plugins: "src/plugins/**/*.*"
+    plugins: "src/plugins/**/*.*",
+    files: "src/download/**/*.*"
   },
   watch: {
     //За изменениями каких файлов мы хотим наблюдать

@@ -45,8 +45,8 @@
                   <a class="btn show btn-main" href="#">Заказать звонок</a>
             </div>
             <div class="col-md-2">
-                  <a class="btn show btn-main" href="#">Войти</a>
-                  <a class="btn show btn-main" href="#">Корзина</a>
+                  <a class="btn show btn-main" href="#"><span class="glyphicon glyphicon-log-in"></span><span class="link-text">Войти</span></a>
+                  <a class="btn show btn-main" href="#"><span class="glyphicon glyphicon-shopping-cart"></span><span class="link-text">Корзина</span></a>
             </div>
           </header>
         </div>
@@ -246,6 +246,27 @@
       </main>
     </div>
     <!-- Content block row End -->
+    <div class="color-wrapper bg-lgreen">
+      <div class="container">
+        <section class="download section">
+          <div class="row">
+            <h2 class="download-title">Вы можете скачать наши каталоги или ознакомиться с ними онлайн:</h2>
+            <div class="col-md-6">
+              <h3 class="download-section-title">Каталог семян</h3>
+              <span class="glyphicon glyphicon-save-file glyphicon-lg"></span>
+              <a class="btn btn-action" download href="download/test.pdf">Скачать</a>
+              <a class="btn btn-main" href="download/test.pdf">Смотреть</a>
+            </div>
+            <div class="col-md-6">
+              <h3 class="download-section-title">Каталог агрохимикатов</h3>
+              <span class="glyphicon glyphicon-save-file glyphicon-lg"></span>
+              <a class="btn btn-action" download href="download/test.pdf">Скачать</a>
+              <a class="btn btn-main" href="download/test.pdf">Смотреть</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
     <div class="container">
       <!-- Promo Begin -->
       <a id="promo"></a>
@@ -446,6 +467,7 @@
         <section class="section contacts">
           <div class="row">
             <h2 class="section-title text-uppercase text-center">Контакты</h2>
+            <p>Если у Вас есть вопросы - напишите нам, мы будем рады ответить</p>
             <div class="col-md-4">
               <p class="contacts-address">
                 346448 Российская Федерация<br>
@@ -460,9 +482,9 @@
             <div class="col-md-4">
               <div class="form-wrapper">
                 <form action="post" class="write-to-us">
-                  <input class="input--light" type="text" name="send" placeholder="Имя...">
-                  <input class="input--light" type="text" name="send" value="" placeholder="Эл.почта...">
-                  <textarea class="input--light" name="send" rows="3" cols="22" placeholder="Ваше сообщение..."></textarea>
+                  <input class="input--light" type="text" name="send" placeholder="Имя..." required>
+                  <input class="input--light" type="text" name="send" value="" placeholder="Эл.почта..." required>
+                  <textarea class="input--light" name="send" rows="3" cols="22" placeholder="Ваше сообщение..." required></textarea>
                   <button type="submit" class="form-submit btn btn-submit" name="button">Отправить</button>
                 </form>
               </div>

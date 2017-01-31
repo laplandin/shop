@@ -41,9 +41,21 @@
   border: 2px solid @greendark;
   background-color: transparent;
 
+  .link-text {
+    padding: 0 10px;
+  }
+
+  .glyphicon {
+    color: @greendark;
+  }
+
   &:hover {
     background-color: @greendark;
     color: @greenlight;
+
+    .glyphicon {
+      color: @greenlight;
+    }
   }
 }
 
@@ -170,4 +182,14 @@
 .subtitle {
   text-transform: uppercase;
   font-weight: bold;
+}
+/**
+ * Typographics
+ */
+.glyphicon-lg {
+  font-size: 60px;
+}
+
+.btn + .btn {
+  margin-left: 20px;
 }
