@@ -34,7 +34,7 @@ $(document).ready(function() {
   $('.js-cert-down').on('click', function() {
     if ((counter % 2) === 0 ) {
       event.preventDefault();
-      certDiv.css('margin-top', certDivHeight);
+      certDiv.css('margin-top', '0px');
       $(this).text('Скрыть');
       counter++;
     } else {
