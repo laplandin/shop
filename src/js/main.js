@@ -25,4 +25,23 @@ $(document).ready(function() {
     });
   });
 //accordion end
+// Certificates motion block
+  var certDiv = $('.certificates-list');
+  certDivHeight = certDiv.css('height');
+  certDiv.css('margin-top', '-' + certDivHeight);
+  var counter = 0;
+
+  $('.js-cert-down').on('click', function() {
+    if ((counter % 2) === 0 ) {
+      event.preventDefault();
+      certDiv.css('margin-top', certDivHeight);
+      $(this).text('Скрыть');
+      counter++;
+    } else {
+      event.preventDefault();
+      certDiv.css('margin-top', '-' + certDivHeight);
+      $(this).text('Больше сертификатов');
+    }
+  });
+  // Certificates motion block - end
 });
