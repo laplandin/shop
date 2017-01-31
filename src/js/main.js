@@ -41,6 +41,7 @@ $(document).ready(function() {
       event.preventDefault();
       certDiv.css('margin-top', '-' + certDivHeight);
       $(this).text('Больше сертификатов');
+      counter++;
     }
   });
   // Certificates motion block - end
