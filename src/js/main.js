@@ -45,4 +45,23 @@ $(document).ready(function() {
     }
   });
   // Certificates motion block - end
+  //modal cart widget
+  $('#cart').on('click', function() {
+    //стартует аякс
+    var vidget = $('.cart-widget');
+    var parent = vidget.parent();
+    vidget.fadeIn();
+    vidget.mouseleave(function() {
+      setTimeout(function(){
+        vidget.fadeOut();
+      }, 1000);
+    });
+
+    timeoutID = setTimeout(function(){
+      vidget.mouseover(function() {
+        clearTimeout(timeoutID);
+      });
+      vidget.fadeOut();
+    }, 2000);
+  });
 });

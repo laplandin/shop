@@ -41,12 +41,23 @@
               </form>
             </div>
             <div class="col-md-2">
-                  <a class="btn btn-phone" href="tel:+78005004244">8 800 500 42 44</a>
-                  <a class="btn show btn-main" href="#" data-toggle="modal" data-target="#call">Заказать звонок</a>
+              <a class="btn btn-phone" href="tel:+78005004244">8 800 500 42 44</a>
+              <a class="btn show btn-main" href="#" data-toggle="modal" data-target="#call">Заказать звонок</a>
             </div>
             <div class="col-md-2">
-                  <a class="btn show btn-main" href="#"><span class="glyphicon glyphicon-log-in"></span><span class="link-text">Войти</span></a>
-                  <a class="btn show btn-main" href="#"><span class="glyphicon glyphicon-shopping-cart"></span><span class="link-text">Корзина</span></a>
+              <a class="btn show btn-main" href="#"><span class="glyphicon glyphicon-log-in"></span><span class="link-text">Войти</span></a>
+              <a class="btn show btn-main" id="cart" href="#"><span class="glyphicon glyphicon-shopping-cart"></span><span class="link-text">Корзина</span></a>
+            </div>
+            <div class="modal-content cart-widget text-center">
+              <p>
+                В вашей корзине <br>
+                <span id=cart-widget-quantity></span>
+                наименований на сумму <br>
+                <span id=cart-widget-total></span> рублей
+              </p>
+              <div class="btn-wrapper text-center">
+                <a href="" class="btn btn-main">Перейти в корзину</a>
+              </div>
             </div>
           </header>
         </div>
@@ -579,7 +590,7 @@
     						</div>
     					</div>
     					<div class="modal-footer">
-    			  			<button type="submit" class="btn btn-success btn-lg btn-block btn-send">Заказать звонок</button>
+    			  			<button type="submit" class="btn btn-main btn-lg btn-block btn-send">Заказать звонок</button>
     					</div>
     				</form>
     			</div>
