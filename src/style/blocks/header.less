@@ -52,6 +52,20 @@
   }
 }
 
+.extended-search {
+  position: absolute;
+  top: -20px;
+  right: 6px;
+  color: @greendark;
+  text-decoration: none;
+  font-weight: 700;
+  display: none;
+
+  &:hover {
+    color: @greendark;
+  }
+}
+
 .link-text {
   position: relative;
 }
@@ -68,4 +82,30 @@
   color: @greendark;
   font-size: 18px;
   display: none;
+}
+
+.form-ext-search {
+  .form-control {
+    border-color: grey;
+
+    &:focus {
+      box-shadow: none;
+      outline: none;
+      border: 2px solid @greendark;
+    }
+}
+  .modal-body {
+    background-color: @greenlight;
+  }
+
+  label {
+    padding: 5px 0 0;
+    font-size: 15px;
+    color: @text-dark;
+  }
+
+  .hyphen {
+    line-height: 30px;
+    font-weight: 700;
+  }
 }
