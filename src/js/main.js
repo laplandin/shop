@@ -63,7 +63,7 @@ $(document).ready(function() {
         clearTimeout(timeoutID);
       });
       vidget.fadeOut();
-    }, 2000);
+    }, 3000);
   });
 
 
@@ -73,7 +73,7 @@ $(document).ready(function() {
     target.slideDown();
     $(this).on('blur', function() {
       target.slideUp();
-    });  
+    });
   });
 
 });
