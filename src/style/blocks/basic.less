@@ -128,6 +128,15 @@
   &:-ms-input-placeholder      {color: @greendark;}
 }
 
+.input--modal {
+  &::-webkit-input-placeholder {color: #ccc;}
+  &::-moz-placeholder          {color: #ccc;}/* Firefox 19+ */
+  &:-moz-placeholder           {color: #ccc;}/* Firefox 18- */
+  &:-ms-input-placeholder      {color: #ccc;}
+
+  color: @greendark;
+}
+
 .input--light {
   background-color: transparent;
   border: none;

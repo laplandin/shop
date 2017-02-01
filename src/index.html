@@ -42,7 +42,7 @@
             </div>
             <div class="col-md-2">
                   <a class="btn btn-phone" href="tel:+78005004244">8 800 500 42 44</a>
-                  <a class="btn show btn-main" href="#">Заказать звонок</a>
+                  <a class="btn show btn-main" href="#" data-toggle="modal" data-target="#call">Заказать звонок</a>
             </div>
             <div class="col-md-2">
                   <a class="btn show btn-main" href="#"><span class="glyphicon glyphicon-log-in"></span><span class="link-text">Войти</span></a>
@@ -555,6 +555,37 @@
         </section>
       </div>
     </div>
+    <div class="modal fade" id="call" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    		<div class="modal-dialog modal-sm" role="document">
+    			<div class="modal-content">
+    				<form method="post" action="call.php">
+    					<div class="modal-header">
+    						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    						<h4 class="modal-title text-center" id="myModalLabel">Укажите контакты и ожидайте звонка</h4>
+    					</div>
+    					<div class="text-center">
+    						<img src="img/bg-call-modal.jpg" class="img-responsive">
+    					</div>
+    					<div class="modal-body">
+    						<div class="fcmessage">
+    							<div class="form-group required">
+    								<label for="recipient-name" class="control-label">Имя:</label>
+    								<input name="name" type="text" class="form-control input input--modal" id="recipient-name" placeholder="Введите имя" required="">
+    							</div>
+    							<div class="form-group required">
+    								<label for="recipient-phone" class="control-label">Телефон:</label>
+    								<input name="phone" type="text" class="form-control input input--modal" id="recipient-phone" placeholder="Введите телефон" required="">
+    							</div>
+    						</div>
+    					</div>
+    					<div class="modal-footer">
+    			  			<button type="submit" class="btn btn-success btn-lg btn-block btn-send">Заказать звонок</button>
+    					</div>
+    				</form>
+    			</div>
+    		</div>
+    	</div>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
