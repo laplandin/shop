@@ -24,7 +24,7 @@ var path = {
     fonts: 'build/fonts/',
     cssVendor:'build/css/vendor/',
     plugins: 'build/plugins/',
-    files: 'build/'
+    files: 'build/download/'
   },
   src: {
     //Откуда брать исходники
@@ -44,7 +44,8 @@ var path = {
     css: 'src/style/**/*.less',
     img: 'src/img/**/*.*',
     fonts: 'src/fonts/**/*.*',
-    plugins: 'src/plugins/**/*.*'
+    plugins: 'src/plugins/**/*.*',
+    files: 'src/download/**/*.*'
   },
   clean: './build'
 };
@@ -116,6 +117,12 @@ gulp.task('plugins:copy', function() {
     .pipe(reload({stream: true}));
 });
 
+gulp.task('files:copy', function() {
+  gulp.src(path.src.files)
+    .pipe(gulp.dest(path.build.files))
+    .pipe(reload({stream: true}));
+});
+
 gulp.task('build', sequence([
       'clean'
     ],
@@ -126,7 +133,8 @@ gulp.task('build', sequence([
       'cssVendor',
       'fonts:build',
       'image:build',
-      'plugins:copy'
+      'plugins:copy',
+      'files:copy'
 ]) );
 
 gulp.task('watch', function() {
@@ -147,6 +155,9 @@ gulp.task('watch', function() {
   });
   watch([path.watch.plugins], function(event, cb) {
     gulp.start('plugins:copy');
+  });
+  watch([path.watch.files], function(event, cb) {
+    gulp.start('files:copy');
   });
 });
 

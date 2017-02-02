@@ -28,9 +28,6 @@
   background-color: white;
 }
 
-// .bg-pattern {
-//   background: url('../img/pattern.jpg');
-// }
 /**
  * Buttons
  */
@@ -105,6 +102,22 @@
   &:hover {
     background-color: white;
     color: @text-dark;
+  }
+}
+
+.btn-white {
+  margin: 8px 0;
+  color: @text-dark;
+  font-weight: 700;
+  border: 2px solid white;
+  outline: none;
+  background-color: white;
+  border-radius: 0;
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
   }
 }
 
@@ -206,4 +219,8 @@
  */
 .glyphicon-lg {
   font-size: 60px;
+}
+
+.text-bold {
+  font-weight: 700;
 }

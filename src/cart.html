@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Основной элемент</title>
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="plugins/flexslider/flexslider.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!--Nav begin -->
+    <div class="color-wrapper bg-lgreen">
+      <div class="container">
+        <div class="row">
+          <header class="navbar page-header">
+               <!-- <row> -->
+            <a class="navbar-brand col-md-3" href="#">
+              <img alt="Brand" src="img/logo.png">
+            </a>
+            <div class="col-md-5">
+              <form class="navbar-form" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control input" id="search" placeholder="Поиск семян...">
+                  <a class="extended-search" data-toggle="modal" data-target="#extended-search" href="">Расширенный поиск</a>
+                </div>
+                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+              </form>
+            </div>
+            <div class="col-md-2">
+              <a class="btn btn-phone" href="tel:+79286183139">8 928 618 31 39</a>
+              <a class="btn show btn-main" href="#" data-toggle="modal" data-target="#call">Заказать звонок</a>
+            </div>
+            <div class="col-md-2">
+              <a class="btn show btn-main" href="#"><span class="glyphicon glyphicon-log-in"></span><span class="link-text">Войти</span></a>
+              <a class="btn show btn-main" id="cart" href="#"><span class="glyphicon glyphicon-shopping-cart"></span><span class="link-text">Корзина</span></a>
+            </div>
+            <div class="modal-content cart-widget text-center">
+              <p>
+                В вашей корзине <br>
+                <span id=cart-widget-quantity></span>
+                наименований на сумму <br>
+                <span id=cart-widget-total></span> рублей
+              </p>
+              <div class="btn-wrapper text-center">
+                <a href="" class="btn btn-main">Перейти в корзину</a>
+              </div>
+            </div>
+          </header>
+        </div>
+      </div>
+    </div>
+ <!-- -------------------------------------------------------------------------------- -->
+  <!-- cart-card body start -->
+ <!-- -------------------------------------------------------------------------------- -->
+  <div class="container cart-page">
+    <h2 class="text-uppercase">Корзина</h2>
+    <div class="row ">
+      <div class="col-sm-8"> <!-- Блок карточек  -->
+     <!--  -->
+        <div class="col-sm-12 modal-content "> <!-- Начало карточки в корзине -->
+          <div class="cart-card">
+            <div class="col-sm-4">
+              <img class="img-responsive" src="img/stock-item.jpg" alt="">
+            </div>
+            <div class="col-sm-8 cart-card-info">
+              <h3 class="cart-card-title">Имя товара</h3>
+              <div class="modal-footer">
+                <button class="btn btn-dec" data-quantity-change="-1">-</button>
+                <input type="text" class="quantity__input" name="cart-card" value="1">
+                <button class="btn btn-inc" data-quantity-change="1">+</button>
+                <span class="cart-card-price-delimeter">X</span>
+                <div class="cart-card-item-price">
+                  <span id="card-item-price">200</span>
+                  <span>РУБ</span>
+                </div>
+                <div class="cart-card-item-delete" data-item-delete="104594295">
+                  <span class="cart-card-item-delimiter">X</span>
+                  <a href="#">Удалить</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- Конец карточки в корзине -->
+
+        <div class="col-sm-12 modal-content "> <!-- Начало карточки в корзине -->
+          <div class="cart-card">
+            <div class="col-sm-4">
+              <img class="img-responsive" src="img/stock-item.jpg" alt="">
+            </div>
+            <div class="col-sm-8 cart-card-info">
+              <h3 class="cart-card-title">Имя товара</h3>
+              <div class="modal-footer">
+                <button class="btn btn-dec" data-quantity-change="-1">-</button>
+                <input type="text" class="quantity__input" name="cart-card" value="1">
+                <button class="btn btn-inc" data-quantity-change="1">+</button>
+                <span class="cart-card-price-delimeter">X</span>
+                <div class="cart-card-item-price">
+                  <span id="card-item-price">200</span>
+                  <span>РУБ</span>
+                </div>
+                <div class="cart-card-item-delete" data-item-delete="104594295">
+                  <span class="cart-card-item-delimiter">X</span>
+                  <a href="#">Удалить</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- Конец карточки в корзине -->
+
+        <div class="col-sm-12 modal-content "> <!-- Начало карточки в корзине -->
+          <div class="cart-card">
+            <div class="col-sm-4">
+              <img class="img-responsive" src="img/stock-item.jpg" alt="">
+            </div>
+            <div class="col-sm-8 cart-card-info">
+              <h3 class="cart-card-title">Имя товара</h3>
+              <div class="modal-footer">
+                <button class="btn btn-dec" data-quantity-change="-1">-</button>
+                <input type="text" class="quantity__input" name="cart-card" value="1">
+                <button class="btn btn-inc" data-quantity-change="1">+</button>
+                <span class="cart-card-price-delimeter">X</span>
+                <div class="cart-card-item-price">
+                  <span id="card-item-price">200</span>
+                  <span>РУБ</span>
+                </div>
+                <div class="cart-card-item-delete" data-item-delete="104594295">
+                  <span class="cart-card-item-delimiter">X</span>
+                  <a href="#">Удалить</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- Конец карточки в корзине -->
+
+      </div> <!-- Конец блока карточек -->
+
+      <!-- Окно итого и перехода к оплате -->
+      <div class="col-sm-4">
+        <div class="purchase modal-content">
+          <div class="modal-header">
+            <a href="" class="to-shop">Продолжить покупки</a>
+          </div>
+          <div class="modal-body">
+            <p class="text-uppercase text-bold">Итого</p>
+            <p class="text-bold"><span id="purchase-total=price">600 </span>РУБ</p>
+          </div>
+          <div class="modal-footer">
+              <a href="#" class="btn btn-white btn-lg btn-block">Оформить заказ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- Конец Окна итого и перехода к оплате -->
+
+
+
+ <!-- -------------------------------------------------------------------------------- -->
+  <!-- cart-card body end -->
+ <!-- -------------------------------------------------------------------------------- -->
+
+
+  <!-- Модальные окна -->
+    <div class="modal fade" id="call" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+            <form method="post" action="call.php">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title text-center" id="myModalLabel">Укажите контакты и ожидайте звонка</h4>
+              </div>
+              <div class="text-center">
+                <img src="img/bg-call-modal.jpg" class="img-responsive">
+              </div>
+              <div class="modal-body">
+                <div class="fcmessage">
+                  <div class="form-group required">
+                    <label for="recipient-name" class="control-label">Имя:</label>
+                    <input name="name" type="text" class="form-control input input--modal" id="recipient-name" placeholder="Введите имя" required="">
+                  </div>
+                  <div class="form-group required">
+                    <label for="recipient-phone" class="control-label">Телефон:</label>
+                    <input name="phone" type="text" class="form-control input input--modal" id="recipient-phone" placeholder="Введите телефон" required="">
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                  <button type="submit" class="btn btn-main btn-lg btn-block btn-send">Заказать звонок</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="extended-search" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true" style="display: none">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <form action="" class="form-horizontal form-ext-search">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                  <h4 class="modal-title text-center" id="myModalLabel1">Воспользуйтесь формой для точного поиска</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 text-right" for="">Сортировка:</label>
+                          <div class="col-sm-9">
+                            <select class="form-control" name="">
+                              <option value="">one</option>
+                              <option value="">two</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-3 text-right" for="">Цена:</label>
+                          <div class="col-sm-4">
+                              <input class="form-control" type="number">
+                          </div>
+                          <div class="col-sm-1">
+                            <span class="hyphen"> - </span>
+                          </div>
+                          <div class="col-sm-4">
+                              <input class="form-control" type="number">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group row">
+                          <label class="col-sm-4 text-right" for="">Производитель:</label>
+                          <div class="col-sm-8">
+                            <select class="form-control" name="">
+                              <option value="">one</option>
+                              <option value="">two</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-4 text-right" for="">Показывать по:</label>
+                          <div class="col-sm-4">
+                            <select class="form-control" name="">
+                              <option value="">one</option>
+                              <option value="">two</option>
+                            </select>
+                          </div>
+                          <div class="col-sm-4"></div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-4 text-right" for="">Срок созревания:</label>
+                          <div class="col-sm-8">
+                            <select class="form-control" name="">
+                              <option value="">one</option>
+                              <option value="">two</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <div class="col-sm-6">
+                    <button type="submit" class="btn btn-main btn-lg btn-block">Поиск</button>
+                  </div>
+                  <div class="col-sm-6">
+                    <button type="reset" class="btn btn-more-info btn-block btn-lg">Очистить</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+    <!-- Конец Модальных окон -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Plugins -->
+    <script src="plugins/flexslider/jquery.flexslider.js"></script>
+    <script src="plugins/smooth-scroll/smooth-scroll.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=XicU2mSOrSJw3yb-FAvWFqb9-BZMZljm&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&id=map"></script>
+  </body>
+</html>
