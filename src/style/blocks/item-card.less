@@ -1,0 +1,58 @@
+.item-card-wrapper {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.item-card {
+  color: @text-dark;
+  float: none;
+
+  .item-card-modal-footer {
+    margin-top: 20px;
+    input {
+      height: 34px;
+      width: 60px;
+      border-radius: 4px;
+      border: 1px #ccc solid;
+      text-align: center;
+    }
+
+    button {
+      &:hover {
+        background-color: grey;
+      }
+    }
+  }
+
+  .to-cart {
+    margin-top: 20px;
+  }
+
+  .item-card-item-price {
+    font-size: 20px;
+    display: inline-block;
+  }
+
+  .item-card-price-delimeter,
+  .item-card-item-price {
+    margin-left: 15px;
+  }
+
+  .item-card-title {
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  .item-card-price {
+    text-transform: uppercase;
+  }
+
+  .item-card-description {
+    font-size: 16px;
+  }
+
+  .item-card-params {
+    padding: 20px;
+    background-color: lightgrey;
+  }
+}
