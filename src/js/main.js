@@ -65,8 +65,8 @@ $(document).ready(function() {
       vidget.fadeOut();
     }, 3000);
   });
-
-
+  // end modal cart widget
+  //показать расширенный поиск по фокусу на инпуте
   $('#search').on('focus', function(event) {
     event.preventDefault();
     var target = $('.extended-search');
@@ -75,5 +75,14 @@ $(document).ready(function() {
       target.slideUp();
     });
   });
-
+  // конец показать расширенный поиск по фокусу на инпуте
+  function totalCalculate(element) {
+    var sum = 0;
+    var inCart = $('span.card-item-price');
+    inCart.each(function() {
+      sum += parseInt($(this).text());
+    });
+    element.text(sum + ' ');
+  }
+  totalCalculate($('#purchase-total-price'));
 });

@@ -133,8 +133,8 @@ gulp.task('build', sequence([
       'cssVendor',
       'fonts:build',
       'image:build',
-      'plugins:copy',
-      'files:copy'
+      'plugins:copy'
+      // 'files:copy'
 ]) );
 
 gulp.task('watch', function() {
