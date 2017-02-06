@@ -202,9 +202,20 @@
     font-weight: 700;
   }
 }
+
+.form-control {
+  border-color: grey;
+
+  &:focus {
+    box-shadow: none;
+    outline: none;
+    border: 2px solid @greendark;
+  }
+}
 /**
  * Sections
  */
+
  main.section {
    padding-bottom: 0;
  }
