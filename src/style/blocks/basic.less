@@ -10,6 +10,7 @@
 
   .section-title,
   .subtitle,
+  .text-title,
   a,
   p {
     color: white;
@@ -118,6 +119,20 @@
   &:hover {
     background-color: white;
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  }
+}
+
+.btn-contrast {
+  margin: 8px 0;
+  color: white;
+  font-weight: 700;
+  border: 2px solid white;
+  outline: none;
+  background-color: transparent;
+
+  &:hover {
+    background-color: white;
+    color: @text-dark;
   }
 }
 
