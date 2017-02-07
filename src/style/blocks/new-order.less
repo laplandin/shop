@@ -1,22 +1,28 @@
 .order-page {
   padding-top: 50px;
 
-  .modal-content {
+  .order-form{
     padding: 30px;
     margin-bottom: 20px;
     color: @text-dark;
   }
 
   .order-widget {
-    padding: 20px;
     background-color: @orange;
     border-radius: 0;
     color: white;
     font-size: 34px;
 
-    .to-shop {
-      font-size: 18px;
-      color: white;
+    .modal-header {
+      font-size: 24px;
+    }
+
+    .modal-content {
+      padding: 0;
+    }
+
+    .modal-footer {
+      font-size: 20px;
     }
   }
 
@@ -58,6 +64,27 @@
     padding: 15px;
     background-color: lightgrey;
 
+  & + textarea {
+    display: block !important;
   }
+  }
+}
 
+.order-item {
+  background-color: white;
+  color: @text-dark;
+
+  &:nth-child(n+2) {
+    border-top: 1px solid @text-dark;
+  }
+}
+
+.order-list {
+  max-height: 314px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.order-item-info span {
+  font-size: 16px;
 }

@@ -9,7 +9,7 @@
     <div class="row ">
       <div class="col-sm-8"> <!-- Блок формы оформления заказа  -->
      <!--  -->
-        <div class="col-sm-12 modal-content "> <!-- Начало карточки в корзине -->
+        <div class="col-sm-12 modal-content order-form"> <!-- Начало карточки в корзине -->
           <form>
             <div class="form-group">
               <h3 class="text-uppercase">Контактные данные</h3>
@@ -25,6 +25,7 @@
               <input class="hide" type="radio" name="delivery-type" id="radio-delivery-post" value="option1">
               <label for="radio-delivery-post">Почтой России</label>
               <p class="hide">Комментарий к почте России</p>
+              <textarea class="hide form-control" name="address" rows="4" cols="80" placeholder="Укажите адрес, по которому нужно доставить заказ"></textarea>
             </div>
             <div class="form-group radio">
               <h3 class="text-uppercase">Способ оплаты</h3>
@@ -38,19 +39,72 @@
             <button type="submit" class="btn btn-lg btn-main">Оформить заказ</button>
           </form>
         </div> <!-- Конец формы оформления заказа -->
-      </div> <!-- Конец блока карточек -->
-
-      <!-- Окно итого и перехода к оплате -->
+      </div>
       <div class="col-sm-4">
         <div class="order-widget modal-content">
           <div class="modal-header">
-            <p class="to-shop">В вашей корзине</p>
+            <p class="to-shop">Ваш заказ</p>
           </div>
           <div class="modal-body">
-            
+            <div class="order-list row"> <!--Контейнер для вывода карточек в корзине -->
+              <div class="row order-item"> <!-- Начало карточки в виджете заказов -->
+                <div class="col-sm-12">
+                  <div class="order-item-content-wrapper">
+                    <div class="col-sm-4">
+                      <img class="img-responsive" src="img/stock-item.jpg" alt="">
+                    </div>
+                    <div class="col-sm-8">
+                      <h3 class="order-item-title">Имя товара</h3>
+                      <div class="order-item-info">
+                        <span class="order-item-quantity">1</span>
+                        <span class="order-item-price-delimeter">X</span>
+                        <span class="card-item-price">200</span>
+                        <span>РУБ</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- Конец карточки в виджете заказов -->
+              <div class="row order-item"> <!-- Начало карточки в виджете заказов -->
+                <div class="col-sm-12">
+                  <div class="order-item-content-wrapper">
+                    <div class="col-sm-4">
+                      <img class="img-responsive" src="img/stock-item.jpg" alt="">
+                    </div>
+                    <div class="col-sm-8">
+                      <h3 class="order-item-title">Имя товара</h3>
+                      <div class="order-item-info">
+                        <span class="order-item-quantity">1</span>
+                        <span class="order-item-price-delimeter">X</span>
+                        <span class="card-item-price">200</span>
+                        <span>РУБ</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- Конец карточки в виджете заказов -->
+              <div class="row order-item"> <!-- Начало карточки в виджете заказов -->
+                <div class="col-sm-12">
+                  <div class="order-item-content-wrapper">
+                    <div class="col-sm-4">
+                      <img class="img-responsive" src="img/stock-item.jpg" alt="">
+                    </div>
+                    <div class="col-sm-8">
+                      <h3 class="order-item-title">Имя товара</h3>
+                      <div class="order-item-info">
+                        <span class="order-item-quantity">1</span>
+                        <span class="order-item-price-delimeter">X</span>
+                        <span class="card-item-price">200</span>
+                        <span>РУБ</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- Конец карточки в виджете заказов -->
+            </div>
           </div>
           <div class="modal-footer">
-            <p class="text-uppercase">Итого:</p>
+            <p class="text-uppercase text-left">Итого: <span class="pull-right">600 РУБ.</span></p>
           </div>
         </div>
       </div>
