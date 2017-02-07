@@ -15,28 +15,25 @@
               <h3 class="text-uppercase">Контактные данные</h3>
               <input type="text" class="form-control" placeholder="Ваше имя*" required>
               <input type="text" class="form-control" placeholder="Ваш телефон*" required>
+              <input type="text" class="form-control" placeholder="Ваш e-mail*" required>
             </div>
-            <div class="radio">
+            <div class="form-group radio">
               <h3 class="text-uppercase">Способ доставки</h3>
-              <label>
-                <input type="radio" name="delivery-type" id="optionsRadios1" value="option1" checked>
-                Курьером
-              </label>
-              <label>
-                <input type="radio" name="delivery-type" id="optionsRadios2" value="option1">
-                Почтой России
-              </label>
+              <input class="hide" type="radio" name="delivery-type" id="radio-delivery-courier" value="option1" checked>
+              <label for="radio-delivery-courier">Самовывоз</label>
+              <p class="hide">один пункт самовывоза: г. Новочеркасск, ул. Ященко 8</p>
+              <input class="hide" type="radio" name="delivery-type" id="radio-delivery-post" value="option1">
+              <label for="radio-delivery-post">Почтой России</label>
+              <p class="hide">Комментарий к почте России</p>
             </div>
-            <div class="radio">
+            <div class="form-group radio">
               <h3 class="text-uppercase">Способ оплаты</h3>
-              <label>
-                <input type="radio" name="payment-type" id="optionsRadio1" value="option1" checked>
-                С банковской карты Visa, MasterCard или Maestro
-              </label>
-              <label>
-                <input type="radio" name="payment-type" id="optionsRadio2" value="option1">
-                Наличным курьеру
-              </label>
+              <input class="hide" type="radio" name="payment-type" id="radio-payment-card" value="option1" checked>
+              <label for="radio-payment-card">С банковской карты Visa, MasterCard или Maestro</label>
+              <p class="hide">Комментарий к банковской карте</p>
+              <input class="hide" type="radio" name="payment-type" id="radio-payment-cash" value="option1">
+              <label for="radio-payment-cash">Наличным курьеру</label>
+              <p class="hide">Комментарий к курьеру</p>
             </div>
             <button type="submit" class="btn btn-lg btn-main">Оформить заказ</button>
           </form>
@@ -47,14 +44,13 @@
       <div class="col-sm-4">
         <div class="order-widget modal-content">
           <div class="modal-header">
-            <a href="" class="to-shop">Продолжить покупки</a>
+            <p class="to-shop">В вашей корзине</p>
           </div>
           <div class="modal-body">
-            <p class="text-uppercase text-bold">Итого</p>
-            <p class="text-bold"><span id="purchase-total-price">600 </span>РУБ</p>
+            
           </div>
           <div class="modal-footer">
-              <a href="#" class="btn btn-white btn-lg btn-block">Оформить заказ</a>
+            <p class="text-uppercase">Итого:</p>
           </div>
         </div>
       </div>
