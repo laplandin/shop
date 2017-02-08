@@ -79,8 +79,8 @@
             </div>
             <div class="row item-card-description">
               <h5 class="item-card-description hide">Описание товара</h5>
-              <p>Мякоть красная, нежная, с маленькими семенами</p>
-              <p>Среднеспелый сорт арбузов. Плоды крупные с темными полосами
+              <p class="item-card-description-text">Мякоть красная, нежная, с маленькими семенами</p>
+              <p class="item-card-description-text">Среднеспелый сорт арбузов. Плоды крупные с темными полосами
                 на светло-зеленой поверхности, кожа тонкая, плотная. Мякоть
                 красная, сочная, ароматная, сладкая, с коричневыми, небольшого
                 размера семечками. Вес арбуза 10-12 кг. Растение неприхотливо к
@@ -88,10 +88,78 @@
                 росе и антракозу). Вкусовые качества - высокие. Хорошо хранится и
                 транспортируется. Употребляется в сыром виде, без какой-либо переработки.
               </p>
-              <div class="button-wrapper text-center">
-                <button class="btn btn-action" type="button" name="button">Написать отзыв</button>
-              </div>
             </div>
+            <h3 class="">Вместе с этим покупают</h3>
+            <div class="row related-goods">
+              <a href="">
+                <div class="col-sm-3 related-item">
+                  <div class="thumbnail">
+                   <img class="img-responsive" src="img/stock-item.jpg" alt="...">
+                   <div class="caption">
+                     <h3>Имя товара</h3>
+                     <p>...</p>
+                   </div>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div class="col-sm-3 related-item">
+                  <div class="thumbnail">
+                   <img class="img-responsive" src="img/stock-item.jpg" alt="...">
+                   <div class="caption">
+                     <h3>Имя товара</h3>
+                     <p>...</p>
+                   </div>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div class="col-sm-3 related-item">
+                  <div class="thumbnail">
+                   <img class="img-responsive" src="img/stock-item.jpg" alt="...">
+                   <div class="caption">
+                     <h3>Имя товара</h3>
+                     <p>...</p>
+                   </div>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div class="col-sm-3 related-item">
+                  <div class="thumbnail">
+                   <img class="img-responsive" src="img/stock-item.jpg" alt="...">
+                   <div class="caption">
+                     <h3>Имя товара</h3>
+                     <p>...</p>
+                   </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="review-form hide">
+              <form class="" action="">
+                <div class="form-group">
+                  <label class for="">Ваше имя</label>
+                  <input class="form-control" name="review-author" type="text">
+                  <label for="">Ваше сообщение</label>
+                  <textarea class="form-control" name="review-message" cols="30" rows="5"></textarea>
+                  <div class="review-form-rate">
+                    <label class="pull-left" for="">Оцените нас</label>
+                    <fieldset class="rating">
+                      <input type="radio" id="star5" name="rating" value="5" /><label class = "glyphicon glyphicon-star" for="star5"></label>
+                      <input type="radio" id="star4" name="rating" value="4" /><label class = "glyphicon glyphicon-star" for="star4"></label>
+                      <input type="radio" id="star3" name="rating" value="3" /><label class = "glyphicon glyphicon-star" for="star3" ></label>
+                      <input type="radio" id="star2" name="rating" value="2" /><label class = "glyphicon glyphicon-star" for="star2"></label>
+                      <input type="radio" id="star1" name="rating" value="1" /><label class = "glyphicon glyphicon-star" for="star1"></label>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="button-wrapper text-center">
+              <button class="btn btn-action js-review-in" type="button" name="button">Написать отзыв</button>
+            </div>
+
             <div class="row item-card-rewiews-list">
               <div class="item-card-review">
                 <p>Отличные семена! Сажали в прошлом году, всё устроило, урожай хороший.</p>

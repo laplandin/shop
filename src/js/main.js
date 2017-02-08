@@ -29,7 +29,7 @@ $(document).ready(function() {
   var certDiv = $('.certificates-list');
   certDivHeight = certDiv.css('height');
   certDiv.css('margin-top', '-' + certDivHeight);
-  var counter = 0;
+  var counterCert = 0;
 
   $('.js-cert-down').on('click', function() {
     if ((counter % 2) === 0 ) {
@@ -41,10 +41,25 @@ $(document).ready(function() {
       event.preventDefault();
       certDiv.css('margin-top', '-' + certDivHeight);
       $(this).text('Больше сертификатов');
-      counter++;
+      counterCert++;
     }
   });
   // Certificates motion block - end
+
+  // review-form
+  $('.js-review-in').on('click', function() {
+      event.preventDefault();
+      // review.css('margin-top', '0px');
+      $(this).text('Отправить');
+      $(this).removeClass('js-review-down').addClass('review-submit')
+      $('.review-form').removeClass('hide');
+      $('.review-submit').on('click', function() {
+        $('.review-form form').submit();
+      });
+  });
+
+  // Certificates motion block - end
+
   //modal cart widget
   $('#cart').on('click', function(event) {
     //стартует аякс
