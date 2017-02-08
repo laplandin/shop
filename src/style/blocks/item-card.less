@@ -3,6 +3,10 @@
   padding: 20px;
 }
 
+.card-item-brief {
+  margin-bottom: 30px;
+}
+
 .item-card {
   margin-top: 40px;
   color: @text-dark;
@@ -27,6 +31,11 @@
 
   .to-cart {
     margin-top: 20px;
+  }
+
+  .item-card-price-wrapper {
+    display: inline;
+    font-size: 20px;
   }
 
   .item-card-item-price {
@@ -56,4 +65,45 @@
     padding: 20px;
     background-color: lightgrey;
   }
+}
+
+.item-card-params--table {
+  display: table;
+}
+
+.item-card-info--tr {
+  display: table-row;
+  padding: 5px 10px;
+}
+
+.item-card-info--td {
+  display: table-cell;
+  padding: 5px 40px 5px 5px;
+}
+
+.item-card-info-month {
+  display: inline-block;
+  padding: 5px;
+  width: 50px;
+  text-align: center;
+  border: 1px solid grey;
+}
+
+.item-card-description {
+  margin-bottom: 30px;
+}
+
+.item-card-review {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid @text-dark;
+}
+
+.item-card-mark {
+  color: @orange;
+}
+
+.item-card-review-customer {
+  float: right;
 }

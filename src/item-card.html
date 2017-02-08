@@ -4,9 +4,9 @@
   <body>
     //= html-partials/header-nav.html
       <!-- <Карточка товара"> -->
-        <!-- <div class="bg-lgreen container item-card-wrapper"> -->
-          <div class="col-md-9 item-card bg-white center-block">
-            <div class="row">
+        <div class="container item-card-wrapper">
+          <div class="item-card bg-white">
+            <div class="row card-item-brief">
               <div class="col-md-5">
                 <div class="thumbnail">
                  <img class="img-responsive" src="img/stock-item.jpg" alt="...">
@@ -18,8 +18,8 @@
                      </div>
                      <div class="pull-right">
                        <span class="cart-card-price-delimeter">X</span>
-                       <div class="item-card-item-price">
-                         <span id="item-item-price">200</span>
+                       <div class="item-card-price-wrapper">
+                         <span class="item-card-price">200</span>
                          <span>РУБ</span>
                        </div>
                      </div>
@@ -29,19 +29,95 @@
               </div>
               <div class="col-sm-7">
                 <h3 class="item-card-title"->Имя товара</h3>
-                <h4 class="item-card-price">Цена: 200 РУБ.</h4>
-                <p class="item-card-description">Описание товара</p>
-                <div class="item-card-params">
-                  <p class="item-card-info"><strong>Свойство:</strong> <em>Значение</em></p>
-                  <p class="item-card-info"><strong>Свойство:</strong> <em>Значение</em></p>
-                  <p class="item-card-info"><strong>Свойство:</strong> <em>Значение</em></p>
-                  <p class="item-card-info"><strong>Свойство:</strong> <em>Значение</em></p>
+                <h4 class="item-card-price">Цена за упаковку: 200 РУБ.</h4>
+                <h4 class="item-card-price">В упаковке: 0,5 гр.</h4>
+                <span class="item-card-mark">
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                </span>
+                <div class="item-card-params item-card-params--table">
+                  <p class="item-card-info item-card-info--tr">
+                    <strong class="item-card-info--td">Срок созревания</strong>
+                    <em class="item-card-info--td">Среднепоздний</em>
+                  </p>
+                  <p class="item-card-info item-card-info--tr">
+                    <strong class="item-card-info--td">Посадка</strong>
+                    <em class="item-card-info--td">
+                      <span class="item-card-info-month">апр</span>
+                      <span class="item-card-info-month">июн</span>
+                    </em>
+                  </p>
+                  <p class="item-card-info item-card-info--tr">
+                    <strong class="item-card-info--td">Время созревания</strong>
+                    <em class="item-card-info--td">
+                      <span class="item-card-info-month">авг</span>
+                      <span class="item-card-info-month">сен</span>
+                    </em>
+                  </p>
+                  <p class="item-card-info item-card-info--tr">
+                    <strong class="item-card-info--td">Расстояние между растениями</strong>
+                    <em class="item-card-info--td">70 - 100 см</em>
+                  </p>
+                  <p class="item-card-info item-card-info--tr">
+                    <strong class="item-card-info--td">Глубина посадки</strong>
+                    <em class="item-card-info--td">5 см</em>
+                  </p>
+                  <p class="item-card-info item-card-info--tr">
+                    <strong class="item-card-info--td">Вес урожая</strong>
+                    <em class="item-card-info--td">5,2 кг</em>
+                  </p>
+                  <p class="item-card-info item-card-info--tr">
+                    <strong class="item-card-info--td">Период созревания</strong>
+                    <em class="item-card-info--td">90 - 95 дней</em>
+                  </p>
                 </div>
+                <a href="#" class="btn btn-more-info">Быстрый заказ по телефону</a>
+              </div>
+            </div>
+            <div class="row item-card-description">
+              <h5 class="item-card-description hide">Описание товара</h5>
+              <p>Мякоть красная, нежная, с маленькими семенами</p>
+              <p>Среднеспелый сорт арбузов. Плоды крупные с темными полосами
+                на светло-зеленой поверхности, кожа тонкая, плотная. Мякоть
+                красная, сочная, ароматная, сладкая, с коричневыми, небольшого
+                размера семечками. Вес арбуза 10-12 кг. Растение неприхотливо к
+                погодным условиям, жаростойкое, устойчиво к заболеваниям (мучнистой
+                росе и антракозу). Вкусовые качества - высокие. Хорошо хранится и
+                транспортируется. Употребляется в сыром виде, без какой-либо переработки.
+              </p>
+              <div class="button-wrapper text-center">
+                <button class="btn btn-action" type="button" name="button">Написать отзыв</button>
+              </div>
+            </div>
+            <div class="row item-card-rewiews-list">
+              <div class="item-card-review">
+                <p>Отличные семена! Сажали в прошлом году, всё устроило, урожай хороший.</p>
+                <span class="item-card-mark">
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                </span>
+                <span class="item-card-review-customer">Ольга, Новочеркасск, 18.01.2017</span>
+              </div>
+              <div class="item-card-review">
+                <p>Отличные семена! Сажали в прошлом году, всё устроило, урожай хороший.</p>
+                <span class="item-card-mark">
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                </span>
+                <span class="item-card-review-customer">Ольга, Новочеркасск, 18.01.2017</span>
               </div>
             </div>
           </div>
-        <!-- </div> -->
-
+        </div>
   <!-- <Конец карточки товара> -->
 
   //= html-partials/modals.html
