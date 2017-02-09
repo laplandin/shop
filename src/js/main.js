@@ -32,11 +32,11 @@ $(document).ready(function() {
   var counterCert = 0;
 
   $('.js-cert-down').on('click', function() {
-    if ((counter % 2) === 0 ) {
+    if ((counterCert % 2) === 0 ) {
       event.preventDefault();
       certDiv.css('margin-top', '0px');
       $(this).text('Скрыть');
-      counter++;
+      counterCert++;
     } else {
       event.preventDefault();
       certDiv.css('margin-top', '-' + certDivHeight);
