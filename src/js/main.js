@@ -150,6 +150,29 @@ $(document).ready(function() {
     focusCleanup: true,
     focusInvalid: false
   });
+
+  $('#js-callme-validate').validate({
+    rules: {
+      callme_name: {
+        required: true
+      },
+      callme_phone: {
+        required: true
+      }
+    },
+    messages: {
+      callme_name: {
+        required: "Пожалуйста, заполните это поле"
+      },
+      callme_phone: {
+        required: "Пожалуйста, заполните это поле"
+      }
+    }
+  });
+
+  jQuery(function($){
+    $("#phone").mask("+7 (999) 999-9999");
+  });
   // Валидация клиента
 
 });
