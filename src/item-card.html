@@ -137,12 +137,16 @@
               </a>
             </div>
             <div class="review-form hide">
-              <form class="" action="">
+              <form class="" action="" id="js-review-validate">
                 <div class="form-group">
                   <label class for="">Ваше имя</label>
-                  <input class="form-control" name="review-author" type="text">
+                  <input class="form-control input input--border" name="review_author" type="text" required>
+                </div>
+                <div class="form-group">
                   <label for="">Ваше сообщение</label>
-                  <textarea class="form-control" name="review-message" cols="30" rows="5"></textarea>
+                  <textarea class="form-control input input--border" name="review_message" cols="30" rows="5" requied></textarea>
+                </div>
+                <div class="form-group">
                   <div class="review-form-rate">
                     <label class="pull-left" for="">Оцените нас</label>
                     <fieldset class="rating">

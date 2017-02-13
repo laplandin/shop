@@ -167,7 +167,30 @@ $(document).ready(function() {
       callme_phone: {
         required: "Пожалуйста, заполните это поле"
       }
-    }
+    },
+    focusCleanup: true,
+    focusInvalid: false
+  });
+
+  $('#js-review-validate').validate({
+    rules: {
+      review_author: {
+        required: true
+      },
+      review_message: {
+        required: true
+      }
+    },
+    messages: {
+      review_author: {
+        required: "Пожалуйста, заполните это поле"
+      },
+      review_message: {
+        required: "Пожалуйста, заполните это поле"
+      }
+    },
+    focusCleanup: true,
+    focusInvalid: false
   });
 
   jQuery(function($){

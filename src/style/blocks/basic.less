@@ -165,6 +165,19 @@
   &:-moz-placeholder           {color: @greendark;}/* Firefox 18- */
   &:-ms-input-placeholder      {color: @greendark;}
 
+  &.error {
+    border-color: rgba(208, 40, 13, 0.5);
+  }
+
+  &--border {
+    border: 2px solid;
+    border-radius: 4px;
+
+    &:focus {
+      padding: 6px 12px;
+    }
+  }
+
   &--light {
     border-color: white;
     color: white;

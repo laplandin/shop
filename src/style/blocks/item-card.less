@@ -1,6 +1,8 @@
 .item-card-wrapper {
+  position: relative;
   margin-top: 20px;
   padding: 20px;
+  z-index: 1;
 }
 
 .card-item-brief {
@@ -99,13 +101,6 @@
   z-index: 100;
 }
 
-.review-form{
-
-  input {
-    margin-bottom: 15px;
-  }
-}
-
 .review-form-rate {
   padding: 20px 0;
 
@@ -150,7 +145,7 @@
 .rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
 
 .related-goods {
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
 }
 
 .related-item {
