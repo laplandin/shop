@@ -100,4 +100,56 @@ $(document).ready(function() {
     element.text(sum + ' ');
   }
   totalCalculate($('#purchase-total-price'));
+
+  // Увеличение / уменьшение количества товара начало
+  $('.btn-dec').on('click', function() {
+   var input = $(this).siblings('input');
+   var val = input.val();
+   val = parseInt(val);
+   if (val + $(this).data('quantityChange') <= 0) {
+     return;
+   }
+   val += $(this).data('quantityChange');
+   input.val(val);
+  });
+
+  $('.btn-inc').on('click', function() {
+   var input = $(this).siblings('input');
+   var val = input.val();
+   val = parseInt(val);
+   val += $(this).data('quantityChange');
+   input.val(val);
+  });
+
+  // Увеличение / уменьшение количества товара конец
+  $('#js-contact-validate').validate({
+    rules: {
+      contact_name: {
+        required: true
+      },
+      contact_email: {
+        required: true,
+        email: true
+      },
+      contact_message: {
+        required: true
+      }
+    },
+    messages: {
+      contact_name: {
+        required: "Пожалуйста, заполните это поле"
+      },
+      contact_email: {
+        required: "Пожалуйста, заполните это поле",
+        email: "Введите корректный адрес почты"
+      },
+      contact_message: {
+        required: "Пожалуйста, заполните это поле"
+      }
+    },
+    focusCleanup: true,
+    focusInvalid: false
+  });
+  // Валидация клиента
+
 });

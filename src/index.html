@@ -471,10 +471,16 @@
             </div>
             <div class="col-sm-4">
               <div class="form-wrapper">
-                <form action="post" class="write-to-us">
-                  <input class="input--light" type="text" name="send" placeholder="Имя..." required>
-                  <input class="input--light" type="text" name="send" value="" placeholder="Эл.почта..." required>
-                  <textarea class="input--light" name="send" rows="3" cols="22" placeholder="Ваше сообщение..." required></textarea>
+                <form action="post" class="write-to-us" id="js-contact-validate">
+                  <div class="form-group">
+                    <input class="input input--light" type="text" name="contact_name" placeholder="Имя...">
+                  </div>
+                  <div class="form-group">
+                    <input class="input input--light" type="text" name="contact_email" value="" placeholder="Эл.почта...">
+                  </div>
+                  <div class="form-group">
+                    <textarea class="input input--light" name="contact_message" rows="3" cols="22" placeholder="Ваше сообщение..."></textarea>
+                  </div>
                   <button type="submit" class="form-submit btn btn-submit" name="button">Отправить</button>
                 </form>
               </div>

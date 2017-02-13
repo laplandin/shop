@@ -149,10 +149,14 @@
   color: @greendark;
   box-shadow: none;
   border-radius: 0;
+  margin-bottom: 4px;
 
   &:active,
   &:focus {
     border-radius: 4px;
+    padding-top: 4px;
+    padding-right: 10px;
+    padding-left: 10px;
     border: 2px solid @greendark;
   }
 
@@ -160,52 +164,71 @@
   &::-moz-placeholder          {color: @greendark;}/* Firefox 19+ */
   &:-moz-placeholder           {color: @greendark;}/* Firefox 18- */
   &:-ms-input-placeholder      {color: @greendark;}
+
+  &--light {
+    border-color: white;
+    color: white;
+    padding: 6px 10px;
+    outline: none;
+
+    &:active,
+    &:focus {
+      padding-right: 8px;
+      padding-left: 8px;
+      border-color: white;
+    }
+
+    &::-webkit-input-placeholder {
+      color: @greenlight;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    &::-moz-placeholder          {
+      color: @greenlight;
+      text-transform: uppercase;
+      font-weight: 700;
+      }/* Firefox 19+ */
+    &:-moz-placeholder           {
+      color: @greenlight;
+      text-transform: uppercase;
+      font-weight: 700;
+      }/* Firefox 18- */
+    &:-ms-input-placeholder      {
+      color: @greenlight;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    &.error {
+      border-color: rgba(208, 40, 13, 0.5);
+    }
+  }
+
+  &--modal {
+    &::-webkit-input-placeholder {color: #ccc;}
+    &::-moz-placeholder          {color: #ccc;}/* Firefox 19+ */
+    &:-moz-placeholder           {color: #ccc;}/* Firefox 18- */
+    &:-ms-input-placeholder      {color: #ccc;}
+
+    color: @greendark;
+  }
 }
 
-.input--modal {
-  &::-webkit-input-placeholder {color: #ccc;}
-  &::-moz-placeholder          {color: #ccc;}/* Firefox 19+ */
-  &:-moz-placeholder           {color: #ccc;}/* Firefox 18- */
-  &:-ms-input-placeholder      {color: #ccc;}
+.form-group {
+  position: relative;
+  margin-bottom: 26px;
 
-  color: @greendark;
-}
+  label.error {
+    position: absolute;
+    display: block;
+    width: auto;
+    margin-bottom: 0;
+    padding: 0 10px;
 
-.input--light {
-  background-color: transparent;
-  border: none;
-  border-bottom: 2px solid white;
-  color: white;
-  box-shadow: none;
-  border-radius: 0;
-  padding: 6px 10px;
-  outline: none;
+    color: @orange;
+    text-align: center;
 
-  &:active,
-  &:focus {
     border-radius: 4px;
-    border: 2px solid white;
-  }
-
-  &::-webkit-input-placeholder {
-    color: @greenlight;
-    text-transform: uppercase;
-    font-weight: 700;
-  }
-  &::-moz-placeholder          {
-    color: @greenlight;
-    text-transform: uppercase;
-    font-weight: 700;
-    }/* Firefox 19+ */
-  &:-moz-placeholder           {
-    color: @greenlight;
-    text-transform: uppercase;
-    font-weight: 700;
-    }/* Firefox 18- */
-  &:-ms-input-placeholder      {
-    color: @greenlight;
-    text-transform: uppercase;
-    font-weight: 700;
   }
 }
 
