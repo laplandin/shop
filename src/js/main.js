@@ -92,6 +92,7 @@ $(document).ready(function() {
   });
   // конец показать расширенный поиск по фокусу на инпуте
   function totalCalculate(element) {
+    var element = $('#purchase-total-price');
     var sum = 0;
     var inCart = $('span.card-item-price');
     inCart.each(function() {
@@ -99,27 +100,47 @@ $(document).ready(function() {
     });
     element.text(sum + ' ');
   }
-  totalCalculate($('#purchase-total-price'));
+
+  totalCalculate(); //Вызов функции при загрузке страницы для расчета
+
+  function changePrice(elem, sign) {
+    console.log(elem.closest('.js-price-parent'));
+    var target = elem.closest('.js-price-parent').find('.js-changable-price');
+    var multiplier = target.data('price');
+    var sum = +target.text() + multiplier * sign;
+    target.text(sum);
+  };
 
   // Увеличение / уменьшение количества товара начало
-  $('.btn-dec').on('click', function() {
-   var input = $(this).siblings('input');
-   var val = input.val();
-   val = parseInt(val);
-   if (val + $(this).data('quantityChange') <= 0) {
-     return;
-   }
-   val += $(this).data('quantityChange');
-   input.val(val);
-  });
+  $('.btn-dec').on('click', quantityChange);
+  $('.btn-inc').on('click', quantityChange);
 
-  $('.btn-inc').on('click', function() {
-   var input = $(this).siblings('input');
-   var val = input.val();
-   val = parseInt(val);
-   val += $(this).data('quantityChange');
-   input.val(val);
-  });
+  function quantityChange() {
+    var sign = 1; //Для отслеживания увеличения - уменьшения
+    var self = $(this); //Для передачи в функцию изменения цены
+    var input = $(this).siblings('input');
+    var val = input.val();
+    var summand = $(this).data('quantityChange'); //Значение шага из атрибута
+    val = parseInt(val);
+    if (val + summand <= 0) {
+      return;
+    }
+    val += summand;
+    if (summand < 0) sign = -1;
+    input.val(val);
+    changePrice(self, sign);
+    totalCalculate();
+  }
+
+  function deleteFromCart() {
+    var target = $(this).closest('.js-card-parent');
+    target.fadeOut(300, function() {
+      target.remove();
+      totalCalculate();
+    });
+  }
+
+  $('.js-delete-item').on('click', deleteFromCart);
 
   // Увеличение / уменьшение количества товара конец
   $('#js-contact-validate').validate({

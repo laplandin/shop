@@ -11,80 +11,80 @@
     <div class="row ">
       <div class="col-sm-8"> <!-- Блок карточек  -->
      <!--  -->
-        <div class="col-sm-12 modal-content "> <!-- Начало карточки в корзине -->
-          <div class="cart-card">
-            <div class="col-sm-4">
-              <img class="img-responsive" src="img/stock-item.jpg" alt="">
-            </div>
-            <div class="col-sm-8 cart-card-info">
-              <h3 class="cart-card-title">Имя товара</h3>
-              <div class="modal-footer">
-                <button class="btn btn-dec" data-quantity-change="-1">-</button>
-                <input type="text" class="quantity__input" name="cart-card" value="1">
-                <button class="btn btn-inc" data-quantity-change="1">+</button>
-                <span class="cart-card-price-delimeter">X</span>
-                <div class="cart-card-item-price">
-                  <span class="card-item-price">200</span>
-                  <span>РУБ</span>
-                </div>
-                <div class="cart-card-item-delete" data-item-delete="104594295">
-                  <span class="cart-card-item-delimiter">X</span>
-                  <a href="#">Удалить</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> <!-- Конец карточки в корзине -->
+     <div class="col-sm-12 modal-content js-card-parent"> <!-- Начало карточки в корзине -->
+       <div class="cart-card">
+         <div class="col-sm-4">
+           <img class="img-responsive" src="img/stock-item.jpg" alt="">
+         </div>
+         <div class="col-sm-8 cart-card-info">
+           <h3 class="cart-card-title">Имя товара</h3>
+           <div class="modal-footer js-price-parent">
+             <button class="btn btn-dec" data-quantity-change="-1">-</button>
+             <input type="text" class="quantity__input" name="cart-card" value="1">
+             <button class="btn btn-inc" data-quantity-change="1">+</button>
+             <!-- <span class="cart-card-price-delimeter">X</span> -->
+             <div class="cart-card-item-price">
+               <span class="card-item-price js-changable-price" data-price="200">200</span>
+               <span>РУБ</span>
+             </div>
+             <div class="cart-card-item-delete" data-item-delete="104594295">
+               <span class="cart-card-item-delimiter">X</span>
+               <a class="js-delete-item" href="#">Удалить</a>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div> <!-- Конец карточки в корзине -->
 
-        <div class="col-sm-12 modal-content "> <!-- Начало карточки в корзине -->
-          <div class="cart-card">
-            <div class="col-sm-4">
-              <img class="img-responsive" src="img/stock-item.jpg" alt="">
-            </div>
-            <div class="col-sm-8 cart-card-info">
-              <h3 class="cart-card-title">Имя товара</h3>
-              <div class="modal-footer">
-                <button class="btn btn-dec" data-quantity-change="-1">-</button>
-                <input type="text" class="quantity__input" name="cart-card" value="1">
-                <button class="btn btn-inc" data-quantity-change="1">+</button>
-                <span class="cart-card-price-delimeter">X</span>
-                <div class="cart-card-item-price">
-                  <span class="card-item-price">200</span>
-                  <span>РУБ</span>
-                </div>
-                <div class="cart-card-item-delete" data-item-delete="104594295">
-                  <span class="cart-card-item-delimiter">X</span>
-                  <a href="#">Удалить</a>
-                </div>
+      <div class="col-sm-12 modal-content js-card-parent"> <!-- Начало карточки в корзине -->
+        <div class="cart-card">
+          <div class="col-sm-4">
+            <img class="img-responsive" src="img/stock-item.jpg" alt="">
+          </div>
+          <div class="col-sm-8 cart-card-info">
+            <h3 class="cart-card-title">Имя товара</h3>
+            <div class="modal-footer js-price-parent">
+              <button class="btn btn-dec" data-quantity-change="-1">-</button>
+              <input type="text" class="quantity__input" name="cart-card" value="1">
+              <button class="btn btn-inc" data-quantity-change="1">+</button>
+              <!-- <span class="cart-card-price-delimeter">X</span> -->
+              <div class="cart-card-item-price">
+                <span class="card-item-price js-changable-price" data-price="200">200</span>
+                <span>РУБ</span>
+              </div>
+              <div class="cart-card-item-delete" data-item-delete="104594295">
+                <span class="cart-card-item-delimiter">X</span>
+                <a class="js-delete-item" href="#">Удалить</a>
               </div>
             </div>
           </div>
-        </div> <!-- Конец карточки в корзине -->
+        </div>
+      </div> <!-- Конец карточки в корзине -->
 
-        <div class="col-sm-12 modal-content "> <!-- Начало карточки в корзине -->
-          <div class="cart-card">
-            <div class="col-sm-4">
-              <img class="img-responsive" src="img/stock-item.jpg" alt="">
-            </div>
-            <div class="col-sm-8 cart-card-info">
-              <h3 class="cart-card-title">Имя товара</h3>
-              <div class="modal-footer">
-                <button class="btn btn-dec" data-quantity-change="-1">-</button>
-                <input type="text" class="quantity__input" name="cart-card" value="1">
-                <button class="btn btn-inc" data-quantity-change="1">+</button>
-                <span class="cart-card-price-delimeter">X</span>
-                <div class="cart-card-item-price">
-                  <span class="card-item-price">200</span>
-                  <span>РУБ</span>
-                </div>
-                <div class="cart-card-item-delete" data-item-delete="104594295">
-                  <span class="cart-card-item-delimiter">X</span>
-                  <a href="#">Удалить</a>
-                </div>
+      <div class="col-sm-12 modal-content js-card-parent"> <!-- Начало карточки в корзине -->
+        <div class="cart-card">
+          <div class="col-sm-4">
+            <img class="img-responsive" src="img/stock-item.jpg" alt="">
+          </div>
+          <div class="col-sm-8 cart-card-info">
+            <h3 class="cart-card-title">Имя товара</h3>
+            <div class="modal-footer js-price-parent">
+              <button class="btn btn-dec" data-quantity-change="-1">-</button>
+              <input type="text" class="quantity__input" name="cart-card" value="1">
+              <button class="btn btn-inc" data-quantity-change="1">+</button>
+              <!-- <span class="cart-card-price-delimeter">X</span> -->
+              <div class="cart-card-item-price">
+                <span class="card-item-price js-changable-price" data-price="200">200</span>
+                <span>РУБ</span>
+              </div>
+              <div class="cart-card-item-delete" data-item-delete="104594295">
+                <span class="cart-card-item-delimiter">X</span>
+                <a class="js-delete-item" href="#">Удалить</a>
               </div>
             </div>
           </div>
-        </div> <!-- Конец карточки в корзине -->
+        </div>
+      </div> <!-- Конец карточки в корзине -->
 
       </div> <!-- Конец блока карточек -->
 
