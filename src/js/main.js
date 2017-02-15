@@ -67,20 +67,70 @@ $(document).ready(function() {
     var vidget = $('.cart-widget');
     var parent = vidget.parent();
     vidget.fadeIn();
-    vidget.mouseleave(function() {
+
+    timeoutID = setTimeout(function() {
+      vidget.fadeOut();
+    }, 3000);
+
+    vidget.hover(handlerIn, handlerOut);
+
+    function handlerIn() {
+      clearTimeout(timeoutID);
+    };
+
+    function handlerOut() {
       setTimeout(function(){
         vidget.fadeOut();
       }, 1000);
-    });
-
-    timeoutID = setTimeout(function(){
-      vidget.mouseover(function() {
-        clearTimeout(timeoutID);
-      });
-      vidget.fadeOut();
-    }, 3000);
+    };
   });
   // end modal cart widget
+
+  // $('.js-to-cart').on('click', toCartSuccess); Пример для проверки
+
+  // Функция для попапа при успешном аяксе на добавление в корзину
+
+  function toCartSuccess(event) {
+    event.preventDefault();
+    var target = $('.js-to-cart-success');
+    target.fadeIn();
+    var timeoutID = setTimeout(function() {
+      target.fadeOut();
+    }, 3000);
+
+    target.hover(handlerIn, handlerOut);
+
+    function handlerIn() {
+      clearTimeout(timeoutID);
+    };
+
+    function handlerOut() {
+      setTimeout(function(){
+        target.fadeOut();
+      }, 1000)
+    }
+  };
+
+  // Функция для попапа при ОШИБКЕ аякса на добавление в корзину
+  function toCartError(event) {
+    event.preventDefault();
+    var target = $('.js-to-cart-error');
+    target.fadeIn();
+    var timeoutID = setTimeout(function() {
+      target.fadeOut();
+    }, 3000);
+
+    target.hover( function() {
+      clearTimeout(timeoutID);
+    });
+
+    target.mouseout(function() {
+      setTimeout(function(){
+        target.fadeOut();
+      }, 1000)
+    });
+  };
+
   //показать расширенный поиск по фокусу на инпуте
   $('#search').on('focus', function(event) {
     event.preventDefault();
@@ -132,7 +182,8 @@ $(document).ready(function() {
     totalCalculate();
   }
 
-  function deleteFromCart() {
+  function deleteFromCart(event) {
+    event.preventDefault();
     var target = $(this).closest('.js-card-parent');
     target.fadeOut(300, function() {
       target.remove();

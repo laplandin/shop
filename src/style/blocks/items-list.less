@@ -44,3 +44,34 @@
 .pagination>li>span:hover {
   color: black;
 }
+
+.modal-to-cart {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 350px;
+  padding: 10px;
+
+  opacity: 0.9;
+  span {
+   vertical-align: top;
+  }
+
+  p {
+    padding-top: 15px;
+    font-size: 20px;
+    line-height: 20px;
+    vertical-align: top;
+    text-align: left;
+  }
+
+  &--success {
+    background-color: @greendark;
+  }
+
+  &--error {
+
+    background-color: @orange;
+  }
+}
