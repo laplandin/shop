@@ -91,7 +91,8 @@ $(document).ready(function() {
   // Функция для попапа при успешном аяксе на добавление в корзину
 
   function toCartSuccess(event) {
-    event.preventDefault();
+    if (event) event.preventDefault();
+
     var target = $('.js-to-cart-success');
     target.fadeIn();
     var timeoutID = setTimeout(function() {
@@ -113,7 +114,7 @@ $(document).ready(function() {
 
   // Функция для попапа при ОШИБКЕ аякса на добавление в корзину
   function toCartError(event) {
-    event.preventDefault();
+    if (event) event.preventDefault();
     var target = $('.js-to-cart-error');
     target.fadeIn();
     var timeoutID = setTimeout(function() {
