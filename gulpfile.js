@@ -103,7 +103,7 @@ gulp.task('image:build', function () {
       interlaced: true
     }))
     .pipe(gulp.dest(path.build.img)) //И бросим в build
-    .pipe(reload({stream: true}));
+   .pipe(reload({stream: true}));
 });
 
 gulp.task('fonts:build', function() {
